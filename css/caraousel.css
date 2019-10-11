@@ -32,6 +32,7 @@
   }
 
   .card-carousel .my-card:after {
+    left: 0;
     content: '';
     position: absolute;
     height: 2px;
