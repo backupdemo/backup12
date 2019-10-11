@@ -1,0 +1,858 @@
+[
+    {
+        "name": "AF",
+        "threat": "The most common form of attack here is DoS"
+    },
+    {
+        "name": "AO",
+        "threat": " The most common form of attack here is ransomware"
+    },
+    {
+        "name": "AL",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "AE",
+        "threat": "The most sommon attack here is spear phishing"
+    },
+    {
+        "name": "AR",
+        "threat": "Hackers leaked 700 GB of data obtained from the government of Argentina"
+    },
+    {
+        "name": "AM",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "AU",
+        "threat": "Massive data breach at the Australian National University"
+    },
+    {
+        "name": "AT",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "AZ",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "BI",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "BE",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "BJ",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "BF",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "BD",
+        "threat": "Hackers were close to stealing about $1 billion from bangladesh bank"
+    },
+    {
+        "name": "BG",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "BH",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "BA",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "BY",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "BZ",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "BO",
+        "threat": "Hackers targeted a number of government agency websites including the police, navy and ministry of communications"
+    },
+    {
+        "name": "BR",
+        "threat": "Cyberattacks generated losses of $22 billion in Brazil"
+    },
+    {
+        "name": "BN",
+        "threat": "Total of 2,143 cybersecurity attacks were recorded last year"
+    },
+    {
+        "name": "BT",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "BW",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "CF",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "CA",
+        "threat": "Recently 19 million Canadians affected by data breaches"
+    },
+    {
+        "name": "CH",
+        "threat": "Most common is password attack"
+    },
+    {
+        "name": "CL",
+        "threat": "Chile accounted for the largest cybercrime-related economic losses at US$5.4bn"
+    },
+    {
+        "name": "CN",
+        "threat": "In 2009 hackers gained access to Google's Chinese headquarters corporate servers and intellectual property was stolen."
+    },
+    {
+        "name": "CI",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "CM",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "CD",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "CG",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "CO",
+        "threat": "Colombia has been the target of 198mn cyberattacks this year alone"
+    },
+    {
+        "name": "CR",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "CU",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "CZ",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "DE",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "DJ",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "DK",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "DO",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "DZ",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "EC",
+        "threat": "Ecuador lost US$3.45bn in a series of cyber attacks"
+    },
+    {
+        "name": "EG",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "ER",
+        "threat": "The most common form of attack here is DoS & DDoS.1"
+    },
+    {
+        "name": "EE",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "ET",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "FI",
+        "threat": "Government websites in Finland suffer DDoS Cyber Attack"
+    },
+    {
+        "name": "FJ",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "GA",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "GB",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "GE",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "GH",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "GN",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "GM",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "GW",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "GQ",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "GR",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "GL",
+        "threat": "Eight years of data and documents were lost when Town Hall computers became infected with an insidious type of “ransomware” virus known as CryptoLocker"
+    },
+    {
+        "name": "GT",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "GY",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "HN",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "HR",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "HT",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "HU",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "ID",
+        "threat": "Cyberattacks caused direct and indirect losses of up to US$6.7 million for large companies and $33,500 for mid-sized companies in Indonesia"
+    },
+    {
+        "name": "IN",
+        "threat": "Massive data breach of 1.1 Billion personal records of Indians holding Aadhaar card"
+    },
+    {
+        "name": "IE",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "IR",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "IQ",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "IS",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "IL",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "IT",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "JM",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "JO",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "JP",
+        "threat": "Cryptocurrency worth ¥7 billion was stolen from the major Japanese cryptocurrency exchange Zaif"
+    },
+    {
+        "name": "KZ",
+        "threat": "There were 20 bn cyber attacks on Kazakhstan this year,"
+    },
+    {
+        "name": "KE",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "KG",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "KH",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "KR",
+        "threat": "The personal information of nearly 1,000 North Koreans who defected to South Korea was leaked by hackers"
+    },
+    {
+        "name": "XK",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "KW",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "LA",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "LB",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "LR",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "LY",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "LK",
+        "threat": "The website of a foreign embassy based in Sri Lanka was targetted through the cyber attacks."
+    },
+    {
+        "name": "LS",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "LT",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "LU",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "LV",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "MA",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "MD",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "MG",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "MX",
+        "threat": "Cyber attack had sucked around 300 million pesos ($15.33 million) in fraudulent transfers from five companies"
+    },
+    {
+        "name": "MK",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "ML",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "MM",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "ME",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "MN",
+        "threat": "Cyber-spies targeted Mongolian businesses and government agencies"
+    },
+    {
+        "name": "MZ",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "MR",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "MW",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "MY",
+        "threat": "Cyber crimes involving losses of RM67.6 million in 2,207 cases were reported in the first three months 2019"
+    },
+    {
+        "name": "NA",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "NE",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "NG",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "NI",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "NL",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "NO",
+        "threat": "Norwegian aluminum maker Norsk Hydro may have lost more than $40 million in the week that followed a cyber attack that paralyzed parts of its operations"
+    },
+    {
+        "name": "NP",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "NZ",
+        "threat": "Up to 1 million New Zealand patients' data breached in criminal cyber hack"
+    },
+    {
+        "name": "OM",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "PK",
+        "threat": "Data from 19,864 cards belonging to customers of 22 Pakistani banks has been put on sale on the dark web"
+    },
+    {
+        "name": "PA",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "PE",
+        "threat": "Peru recorded losses of US$4.78bn"
+    },
+    {
+        "name": "PH",
+        "threat": "Cyber-security threats to cost PHL organizations $3.5 billion in potential economic losses"
+    },
+    {
+        "name": "PG",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "PL",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "KP",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "PT",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "PY",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "PS",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "QA",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "RO",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "RU",
+        "threat": "Cyber attacks using malware called “BadRabbit” hits Russia affecting Russian Interfax news agency and causing flight delays at Ukraine’s Odessa airport."
+    },
+    {
+        "name": "RW",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "EH",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "SA",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "SD",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "SS",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "SN",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "SL",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "SV",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "RS",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "SR",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "SK",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "SI",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "SE",
+        "threat": "Multi-million data breach in around 20 companies, four banks, several law firms and a number of private individuals as well as the Swedish Prison and Probation Service"
+    },
+    {
+        "name": "SZ",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "SY",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "TD",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "TG",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "TH",
+        "threat": "Cyber Attack Shuts Down Hoya Corp's Thailand Plant for Three Days"
+    },
+    {
+        "name": "TJ",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "TM",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "TL",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "TN",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "TR",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "TW",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "TZ",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "UG",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "UA",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "UY",
+        "threat": "Huge data breach when nearly all 28 million users’ accounts were compromised."
+    },
+    {
+        "name": "US",
+        "threat": "In 2014, Yahoo! suffered a cyber attack in 2014 that affected 500 million user accounts"
+    },
+    {
+        "name": "UZ",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "VE",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "VN",
+        "threat": "About 19 million online–27.7% of Vietnamese users–and 99 million offline–59.9% of users– attacks in the first six months of 2019"
+    },
+    {
+        "name": "VU",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "YE",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "ZA",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "ZM",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "ZW",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "SO",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "GF",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "FR",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "ES",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "AW",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "AI",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "AD",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "AG",
+        "threat": "0.0"
+    },
+    {
+        "name": "BS",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "BM",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "BB",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "KM",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "CV",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "KY",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "DM",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "FK",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "FO",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "GD",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "HK",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "KN",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "LC",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "LI",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "MF",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "MV",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "MT",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "MS",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "MU",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "NC",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "NR",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "PN",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "PR",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "PF",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "SG",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "SB",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "ST",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "SX",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "SC",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "TC",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "TO",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "TT",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "VC",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "VG",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "VI",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "CY",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "RE",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "YT",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "MQ",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "GP",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "CW",
+        "threat": "The most common form of attack here is DoS & DDoS."
+    },
+    {
+        "name": "IC",
+        "threat": "Thousands of Icelandic citizens have been subject to a phishing attempt by criminals . These attacks are designed to trick people into giving over sensitive information to hackers."
+    }
+]

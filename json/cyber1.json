@@ -1,0 +1,858 @@
+[
+    {
+        "name": "AF",
+        "threat": "The most common form of attack here is DoS"
+    },
+    {
+        "name": "AO",
+        "threat": "Ransomware"
+    },
+    {
+        "name": "AL",
+        "threat": "DoS & DDoS"
+    },
+    {
+        "name": "AE",
+        "threat": "spear phishing"
+    },
+    {
+        "name": "AR",
+        "threat": "Hackers leaked 700 GB of data obtained from the government of Argentina"
+    },
+    {
+        "name": "AM",
+        "threat": "DDos"
+    },
+    {
+        "name": "AU",
+        "threat": "Massive data breach at the Australian National University"
+    },
+    {
+        "name": "AT",
+        "threat": "Malware"
+    },
+    {
+        "name": "AZ",
+        "threat": "DDoS"
+    },
+    {
+        "name": "BI",
+        "threat": "Phishing"
+    },
+    {
+        "name": "BE",
+        "threat": "exploited vulnerabilities"
+    },
+    {
+        "name": "BJ",
+        "threat": "DDoS"
+    },
+    {
+        "name": "BF",
+        "threat": "Phishing"
+    },
+    {
+        "name": "BD",
+        "threat": "Hackers were close to stealing about $1 billion from bangladesh bank"
+    },
+    {
+        "name": "BG",
+        "threat": "0.57"
+    },
+    {
+        "name": "BH",
+        "threat": "0.01"
+    },
+    {
+        "name": "BA",
+        "threat": "0.12"
+    },
+    {
+        "name": "BY",
+        "threat": "Trojan"
+    },
+    {
+        "name": "BZ",
+        "threat": "0.0"
+    },
+    {
+        "name": "BO",
+        "threat": "Hackers targeted a number of government agency websites including the police, navy and ministry of communications"
+    },
+    {
+        "name": "BR",
+        "threat": "Cyberattacks generated losses of $22 billion in Brazil"
+    },
+    {
+        "name": "BN",
+        "threat": "Total of 2,143 cybersecurity attacks were recorded last year"
+    },
+    {
+        "name": "BT",
+        "threat": "DoS"
+    },
+    {
+        "name": "BW",
+        "threat": "Phishing"
+    },
+    {
+        "name": "CF",
+        "threat": "0.08"
+    },
+    {
+        "name": "CA",
+        "threat": "Recently 19 million Canadians affected by data breaches"
+    },
+    {
+        "name": "CH",
+        "threat": "Most common is password attack"
+    },
+    {
+        "name": "CL",
+        "threat": "Chile accounted for the largest cybercrime-related economic losses at US$5.4bn"
+    },
+    {
+        "name": "CN",
+        "threat": "Exploit"
+    },
+    {
+        "name": "CI",
+        "threat": "Trojan"
+    },
+    {
+        "name": "CM",
+        "threat": "0.03"
+    },
+    {
+        "name": "CD",
+        "threat": "0.03"
+    },
+    {
+        "name": "CG",
+        "threat": "0.03"
+    },
+    {
+        "name": "CO",
+        "threat": "Colombia has been the target of 198mn cyberattacks this year alone"
+    },
+    {
+        "name": "CR",
+        "threat": "Malware"
+    },
+    {
+        "name": "CU",
+        "threat": "0.12"
+    },
+    {
+        "name": "CZ",
+        "threat": "0.46"
+    },
+    {
+        "name": "DE",
+        "threat": "1.65"
+    },
+    {
+        "name": "DJ",
+        "threat": "Trojan"
+    },
+    {
+        "name": "DK",
+        "threat": "0.32"
+    },
+    {
+        "name": "DO",
+        "threat": "0.07"
+    },
+    {
+        "name": "DZ",
+        "threat": "0.01"
+    },
+    {
+        "name": "EC",
+        "threat": "Ecuador lost US$3.45bn"
+    },
+    {
+        "name": "EG",
+        "threat": "0.01"
+    },
+    {
+        "name": "ER",
+        "threat": "0.01"
+    },
+    {
+        "name": "EE",
+        "threat": "0.09"
+    },
+    {
+        "name": "ET",
+        "threat": "0.05"
+    },
+    {
+        "name": "FI",
+        "threat": "Government websites in Finland suffer DDoS Cyber Attack"
+    },
+    {
+        "name": "FJ",
+        "threat": "0.0"
+    },
+    {
+        "name": "GA",
+        "threat": "0.0"
+    },
+    {
+        "name": "GB",
+        "threat": "DDOS"
+    },
+    {
+        "name": "GE",
+        "threat": "0.27"
+    },
+    {
+        "name": "GH",
+        "threat": "Malware"
+    },
+    {
+        "name": "GN",
+        "threat": "Malware"
+    },
+    {
+        "name": "GM",
+        "threat": "0.0"
+    },
+    {
+        "name": "GW",
+        "threat": "0.0"
+    },
+    {
+        "name": "GQ",
+        "threat": "0.0"
+    },
+    {
+        "name": "GR",
+        "threat": "5.56"
+    },
+    {
+        "name": "GL",
+        "threat": "Eight years of data and documents were lost when Town Hall computers became infected with an insidious type of “ransomware” virus known as CryptoLocker"
+    },
+    {
+        "name": "GT",
+        "threat": "0.07"
+    },
+    {
+        "name": "GY",
+        "threat": "Trojan"
+    },
+    {
+        "name": "HN",
+        "threat": "0.26"
+    },
+    {
+        "name": "HR",
+        "threat": "0.21"
+    },
+    {
+        "name": "HT",
+        "threat": "0.03"
+    },
+    {
+        "name": "HU",
+        "threat": "0.15"
+    },
+    {
+        "name": "ID",
+        "threat": "Cyberattacks caused direct and indirect losses of up to US$6.7 million for large companies and $33,500 for mid-sized companies in Indonesia"
+    },
+    {
+        "name": "IN",
+        "threat": "Massive data breach of 1.1 Billion personal records of Indians holding Aadhaar card"
+    },
+    {
+        "name": "IE",
+        "threat": "0.27"
+    },
+    {
+        "name": "IR",
+        "threat": "0.27"
+    },
+    {
+        "name": "IQ",
+        "threat": "Malware"
+    },
+    {
+        "name": "IS",
+        "threat": "Malware"
+    },
+    {
+        "name": "IL",
+        "threat": "5.85"
+    },
+    {
+        "name": "IT",
+        "threat": "1.67"
+    },
+    {
+        "name": "JM",
+        "threat": "Trojan"
+    },
+    {
+        "name": "JO",
+        "threat": "Trojan"
+    },
+    {
+        "name": "JP",
+        "threat": "Cryptocurrency worth ¥7 billion was stolen from the major Japanese cryptocurrency exchange Zaif"
+    },
+    {
+        "name": "KZ",
+        "threat": "There were 20 bn cyber attacks on Kazakhstan this year,"
+    },
+    {
+        "name": "KE",
+        "threat": "1.44"
+    },
+    {
+        "name": "KG",
+        "threat": "1.44"
+    },
+    {
+        "name": "KH",
+        "threat": "0.03"
+    },
+    {
+        "name": "KR",
+        "threat": "The personal information of nearly 1,000 North Koreans who defected to South Korea was leaked by hackers"
+    },
+    {
+        "name": "XK",
+        "threat": "0.64"
+    },
+    {
+        "name": "KW",
+        "threat": "0.08"
+    },
+    {
+        "name": "LA",
+        "threat": "0.0"
+    },
+    {
+        "name": "LB",
+        "threat": "0.01"
+    },
+    {
+        "name": "LR",
+        "threat": "0.01"
+    },
+    {
+        "name": "LY",
+        "threat": "0.01"
+    },
+    {
+        "name": "LK",
+        "threat": "1.33"
+    },
+    {
+        "name": "LS",
+        "threat": "1.33"
+    },
+    {
+        "name": "LT",
+        "threat": "0.07"
+    },
+    {
+        "name": "LU",
+        "threat": "0.03"
+    },
+    {
+        "name": "LV",
+        "threat": "0.06"
+    },
+    {
+        "name": "MA",
+        "threat": "0.0"
+    },
+    {
+        "name": "MD",
+        "threat": "Malware"
+    },
+    {
+        "name": "MG",
+        "threat": "0.0"
+    },
+    {
+        "name": "MX",
+        "threat": "Cyber attack had sucked around 300 million pesos ($15.33 million) in fraudulent transfers from five companies"
+    },
+    {
+        "name": "MK",
+        "threat": "0.09"
+    },
+    {
+        "name": "ML",
+        "threat": "0.09"
+    },
+    {
+        "name": "MM",
+        "threat": "0.06"
+    },
+    {
+        "name": "ME",
+        "threat": "0.06"
+    },
+    {
+        "name": "MN",
+        "threat": "Cyber-spies targeted Mongolian businesses and government agencies"
+    },
+    {
+        "name": "MZ",
+        "threat": "0.03"
+    },
+    {
+        "name": "MR",
+        "threat": "0.03"
+    },
+    {
+        "name": "MW",
+        "threat": "Trojan"
+    },
+    {
+        "name": "MY",
+        "threat": "Cyber crimes involving losses of RM67.6 million in 2,207 cases were reported in the first three months 2019"
+    },
+    {
+        "name": "NA",
+        "threat": "Malware"
+    },
+    {
+        "name": "NE",
+        "threat": "0.0"
+    },
+    {
+        "name": "NG",
+        "threat": "0.35"
+    },
+    {
+        "name": "NI",
+        "threat": "0.08"
+    },
+    {
+        "name": "NL",
+        "threat": "0.83"
+    },
+    {
+        "name": "NO",
+        "threat": "Norwegian aluminum maker Norsk Hydro may have lost more than $40 million in the week that followed a cyber attack that paralyzed parts of its operations"
+    },
+    {
+        "name": "NP",
+        "threat": "Malware"
+    },
+    {
+        "name": "NZ",
+        "threat": "Up to 1 million New Zealand patients' data breached in criminal cyber hack"
+    },
+    {
+        "name": "OM",
+        "threat": "0.01"
+    },
+    {
+        "name": "PK",
+        "threat": "Data from 19,864 cards belonging to customers of 22 Pakistani banks has been put on sale on the dark web"
+    },
+    {
+        "name": "PA",
+        "threat": "0.45"
+    },
+    {
+        "name": "PE",
+        "threat": "Peru recorded losses of US$4.78bn"
+    },
+    {
+        "name": "PH",
+        "threat": "Cyber-security threats to cost PHL organizations $3.5 billion in potential economic losses"
+    },
+    {
+        "name": "PG",
+        "threat": "Trojan"
+    },
+    {
+        "name": "PL",
+        "threat": "Trojan"
+    },
+    {
+        "name": "KP",
+        "threat": "Trojan"
+    },
+    {
+        "name": "PT",
+        "threat": "1.64"
+    },
+    {
+        "name": "PY",
+        "threat": "Ransomware"
+    },
+    {
+        "name": "PS",
+        "threat": "0.01"
+    },
+    {
+        "name": "QA",
+        "threat": "Trojan"
+    },
+    {
+        "name": "RO",
+        "threat": "0.28"
+    },
+    {
+        "name": "RU",
+        "threat": "Phishing"
+    },
+    {
+        "name": "RW",
+        "threat": "0.07"
+    },
+    {
+        "name": "EH",
+        "threat": "0.07"
+    },
+    {
+        "name": "SA",
+        "threat": "0.32"
+    },
+    {
+        "name": "SD",
+        "threat": "Malware"
+    },
+    {
+        "name": "SS",
+        "threat": "0.08"
+    },
+    {
+        "name": "SN",
+        "threat": "0.01"
+    },
+    {
+        "name": "SL",
+        "threat": "0.01"
+    },
+    {
+        "name": "SV",
+        "threat": "0.16"
+    },
+    {
+        "name": "RS",
+        "threat": "0.09"
+    },
+    {
+        "name": "SR",
+        "threat": "0.0"
+    },
+    {
+        "name": "SK",
+        "threat": "0.06"
+    },
+    {
+        "name": "SI",
+        "threat": "0.17"
+    },
+    {
+        "name": "SE",
+        "threat": "Multi-million data breach in around 20 companies, four banks, several law firms and a number of private individuals as well as the Swedish Prison and Probation Service"
+    },
+    {
+        "name": "SZ",
+        "threat": "Malware"
+    },
+    {
+        "name": "SY",
+        "threat": "Malware"
+    },
+    {
+        "name": "TD",
+        "threat": "Malware"
+    },
+    {
+        "name": "TG",
+        "threat": "Malware"
+    },
+    {
+        "name": "TH",
+        "threat": "Cyber Attack Shuts Down Hoya Corp's Thailand Plant for Three Days"
+    },
+    {
+        "name": "TJ",
+        "threat": "0.66"
+    },
+    {
+        "name": "TM",
+        "threat": "0.0"
+    },
+    {
+        "name": "TL",
+        "threat": "0.0"
+    },
+    {
+        "name": "TN",
+        "threat": "0.0"
+    },
+    {
+        "name": "TR",
+        "threat": "1.92"
+    },
+    {
+        "name": "TW",
+        "threat": "0.85"
+    },
+    {
+        "name": "TZ",
+        "threat": "Trojan"
+    },
+    {
+        "name": "UG",
+        "threat": "0.15"
+    },
+    {
+        "name": "UA",
+        "threat": "2.64"
+    },
+    {
+        "name": "UY",
+        "threat": "Huge data breach when nearly all 28 million users’ accounts were compromised."
+    },
+    {
+        "name": "US",
+        "threat": "In 2014, Yahoo! suffered a cyber attack in 2014 that affected 500 million user accounts"
+    },
+    {
+        "name": "UZ",
+        "threat": "0.0"
+    },
+    {
+        "name": "VE",
+        "threat": "0.0"
+    },
+    {
+        "name": "VN",
+        "threat": "About 19 million online–27.7% of Vietnamese users–and 99 million offline–59.9% of users– attacks in the first six months of 2019"
+    },
+    {
+        "name": "VU",
+        "threat": "0.01"
+    },
+    {
+        "name": "YE",
+        "threat": "0.01"
+    },
+    {
+        "name": "ZA",
+        "threat": "DOS"
+    },
+    {
+        "name": "ZM",
+        "threat": "0.07"
+    },
+    {
+        "name": "ZW",
+        "threat": "0.14"
+    },
+    {
+        "name": "SO",
+        "threat": "0.09"
+    },
+    {
+        "name": "GF",
+        "threat": "0.09"
+    },
+    {
+        "name": "FR",
+        "threat": "2.35"
+    },
+    {
+        "name": "ES",
+        "threat": "1.76"
+    },
+    {
+        "name": "AW",
+        "threat": "1.76"
+    },
+    {
+        "name": "AI",
+        "threat": "0.0"
+    },
+    {
+        "name": "AD",
+        "threat": "0.01"
+    },
+    {
+        "name": "AG",
+        "threat": "0.0"
+    },
+    {
+        "name": "BS",
+        "threat": "0.0"
+    },
+    {
+        "name": "BM",
+        "threat": "0.0"
+    },
+    {
+        "name": "BB",
+        "threat": "Trojan"
+    },
+    {
+        "name": "KM",
+        "threat": "Trojan"
+    },
+    {
+        "name": "CV",
+        "threat": "0.0"
+    },
+    {
+        "name": "KY",
+        "threat": "0.0"
+    },
+    {
+        "name": "DM",
+        "threat": "0.0"
+    },
+    {
+        "name": "FK",
+        "threat": "0.0"
+    },
+    {
+        "name": "FO",
+        "threat": "0.0"
+    },
+    {
+        "name": "GD",
+        "threat": "0.01"
+    },
+    {
+        "name": "HK",
+        "threat": "0.84"
+    },
+    {
+        "name": "KN",
+        "threat": "0.84"
+    },
+    {
+        "name": "LC",
+        "threat": "0.0"
+    },
+    {
+        "name": "LI",
+        "threat": "0.0"
+    },
+    {
+        "name": "MF",
+        "threat": "0.0"
+    },
+    {
+        "name": "MV",
+        "threat": "0.1"
+    },
+    {
+        "name": "MT",
+        "threat": "0.06"
+    },
+    {
+        "name": "MS",
+        "threat": "0.06"
+    },
+    {
+        "name": "MU",
+        "threat": "0.11"
+    },
+    {
+        "name": "NC",
+        "threat": "0.0"
+    },
+    {
+        "name": "NR",
+        "threat": "0.0"
+    },
+    {
+        "name": "PN",
+        "threat": "0.0"
+    },
+    {
+        "name": "PR",
+        "threat": "Malware"
+    },
+    {
+        "name": "PF",
+        "threat": "Malware"
+    },
+    {
+        "name": "SG",
+        "threat": "0.69"
+    },
+    {
+        "name": "SB",
+        "threat": "0.69"
+    },
+    {
+        "name": "ST",
+        "threat": "Malware"
+    },
+    {
+        "name": "SX",
+        "threat": "Malware"
+    },
+    {
+        "name": "SC",
+        "threat": "0.0"
+    },
+    {
+        "name": "TC",
+        "threat": "0.0"
+    },
+    {
+        "name": "TO",
+        "threat": "0.0"
+    },
+    {
+        "name": "TT",
+        "threat": "0.08"
+    },
+    {
+        "name": "VC",
+        "threat": "0.08"
+    },
+    {
+        "name": "VG",
+        "threat": "0.08"
+    },
+    {
+        "name": "VI",
+        "threat": "0.01"
+    },
+    {
+        "name": "CY",
+        "threat": "0.1"
+    },
+    {
+        "name": "RE",
+        "threat": "0.08"
+    },
+    {
+        "name": "YT",
+        "threat": "0.01"
+    },
+    {
+        "name": "MQ",
+        "threat": "0.01"
+    },
+    {
+        "name": "GP",
+        "threat": "0.0"
+    },
+    {
+        "name": "CW",
+        "threat": "Trojan"
+    },
+    {
+        "name": "IC",
+        "threat": "Thousands of Icelandic citizens have been subject to a phishing attempt by criminals . These attacks are designed to trick people into giving over sensitive information to hackers."
+    }
+]

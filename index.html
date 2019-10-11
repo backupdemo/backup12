@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href=" assets/logonew.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+    <script src=" node_modules/datamaps/dist/datamaps.world.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src=" swiper-master/dist/js/swiper.min.js"></script>
+    <!-- <link rel="stylesheet" href="css/aboutus.css"> -->
+    <link rel="stylesheet" href=" css/animation.css">
+    <link rel="stylesheet" href=" css/index.css">
+    <!-- <link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css"> -->
+    <!-- <link rel="stylesheet" href=" swiper-master/dist/css/swiper.min.css"> -->
+
+
+    <title>BackUp</title>
+    <script src=" js/mapdata.js"></script>
+    <script src=" js/svg.js"></script>
+    <script src=" js/worldmap.js"></script>
+    <script>
+        $(document).ready(function () {
+            var i = 1;
+            $("#fadein").fadeIn(2000);
+
+        });
+
+        function next_click(str) {
+            console.log(str);
+            $('.notification').hide();
+            var i = Number(str) + 1;
+            $('#n' + i).fadeIn(500);
+        }
+    </script>
+    <script type="text/javascript">
+        /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+        (function(d, m){
+          var kommunicateSettings = {"appId":"3ee2ee3b87a1a3e00f5d1656f82b6ceed","popupWidget":true,"automaticChatOpenOnNavigation":true};
+          var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+          s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+          var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+          window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    </script>
+
+</head>
+
+<body onload="insert()">
+    <div id="load"></div>
+
+    <header class="container-fluid p-0 fixed" id="myHeader">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> <button type="button" id="button_head"
+                                style="color: white; background: transparent;">Home <span
+                                    class="sr-only">(current)</span></button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=" html/aboutus.html"><button type="button" id="button_head"
+                                style="color: white; background: transparent;">About
+                                Us</button></a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+                <a class="navbar-brand" href="#">
+                    <img src=" assets/logonew.png" alt="logo.jpg" id="logo">
+
+                    <img src=" assets/backup_head_text.png" alt="" id="logo">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                    style="color: #00fda9;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href=" html/product.html"> <button type="button" id="button_head"
+                                style="color: white; background: transparent;">Product</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=" html/contact.html"><button type="button" id="button_head"
+                                style="color: white; background: transparent;">Contact</button></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="particle ">
+        <div id="particles-js">
+            <div id="container">
+                <div class="opacity" style="background:rgb(0,0,0.)"></div>
+                <div class="main-heading hide" id="fadein" style="z-index:10;display: none;">
+                    <img src=" assets/logonew.png">
+                    <img src=" assets/backup_text.png" alt="backup.jpg">
+                    <h3 style="color: white; padding-top:50px;z-index: 10; ">
+                            REIMAGINING CYBER-SECURITY TRAINING</h3>
+                </div>
+                <div class="noti">
+                    <h4 style="color: red;text-align: center;">CYBER <span style="color: white">CORNER</span></h4>
+                    <div class="notification row" id="n1">
+                        <div class="col-md-3 not_img">
+                            <img src=" assets/news10.jpg" alt="">
+                        </div>
+                        <div class="col-md-8 not_content">
+                            <h3 style="text-transform:uppercase;">Hack attack puts health details of one million New
+                                Zealanders at risk</h3>
+                            <p>The hack that placed in jeopardy the medical details of a million people went unnoticed
+                                for three years.
+                                The Ministry of Health is in the dark.</p>
+                        </div>
+                        <div class="col-md-1 not_next">
+                            <button type="button" id="next_news" style="background: transparent;border: none;"
+                                onclick="next_click('1')">
+                                <a class="arrowright">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <div class="shadow"></div>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="notification row" id="n2" style="display: none;">
+                        <div class="col-md-3 not_img">
+                            <img src=" assets/news13.jpg" alt="">
+                        </div>
+                        <div class="col-md-8 not_content">
+                            <h3 style="text-transform:uppercase;">Ransomware Hampers Operations for Public Hospital
+                                System</h3>
+                            <p>The cyberattack, continues to prevent DCH System hospitals from accepting new patients.
+                                Attack is one of at least 621 such attacks on government entities this year.</p>
+                        </div>
+                        <div class="col-md-1 not_next">
+                            <button type="button" id="next_news" style="background: transparent;border: none;"
+                                onclick="next_click('2')">
+                                <a class="arrowright">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <div class="shadow"></div>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="notification row" id="n3" style="display: none;">
+                        <div class="col-md-3 not_img">
+                            <img src=" assets/news12.jpg" alt="">
+                        </div>
+                        <div class="col-md-8 not_content">
+                            <h3>Russia's Sberbank investigating potential client data leak</h3>
+                            <p>Russia’s biggest lender, is investigating a potential leak of client data, as reported
+                                that the leak may be the biggest ever in the history of Russian banking.</p>
+                        </div>
+                        <div class="col-md-1 not_next">
+                            <button type="button" id="next_news" style="background: transparent;border: none;"
+                                onclick="next_click('3')">
+                                <a class="arrowright">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <div class="shadow"></div>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="notification row" id="n4" style="display: none;">
+                        <div class="col-md-3 not_img">
+                            <img src=" assets/news3.jpg" alt="">
+                        </div>
+                        <div class="col-md-8 not_content">
+                            <h3>Russian Spies ‘Breached FBI Encrypted Communications’</h3>
+                            <p>Russian intelligence agents succeeded in breaking one of the FBI's encrypted
+                                communications systems used by elite mobile surveillance teams.</p>
+                        </div>
+                        <div class="col-md-1 not_next">
+                            <button type="button" id="next_news" style="background: transparent;border: none;"
+                                onclick="next_click('4')">
+                                <a class="arrowright">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <div class="shadow"></div>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="notification row" id="n5" style="display: none;">
+                        <div class="col-md-3 not_img">
+                            <img src=" assets/news4.jpg" alt="">
+                        </div>
+                        <div class="col-md-8 not_content">
+                            <h3>Huawei Users At Risk As U.S. Blacklist Cuts Access To Shared Data On New Cyber Threats
+                            </h3>
+                            <p>U.S. blacklist restricting Huawei’s access to U.S. suppliers and technology.</p>
+                        </div>
+                        <div class="col-md-1 not_next">
+                            <button type="button" id="next_news" style="background: transparent;border: none;"
+                                onclick="next_click('5')">
+                                <a class="arrowright">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <div class="shadow"></div>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="notification row" id="n6" style="display: none;">
+                        <div class="col-md-3 not_img">
+                            <img src=" assets/news6.jpg" alt="">
+                        </div>
+                        <div class="col-md-8 not_content">
+                            <h3>ISIS Or Al-Qaeda Could Attack Using ‘Dirty Bomb’</h3>
+                            <p>The West and Israel must take necessary precautions to prevent terrorists from launching
+                                a “dirty” cyber bomb.</p>
+                        </div>
+                        <div class="col-md-1 not_next">
+                            <button type="button" id="next_news" style="background: transparent;border: none;"
+                                onclick="next_click('6')">
+                                <a class="arrowright">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <div class="shadow"></div>
+                                </a></button>
+                        </div>
+                    </div>
+                    <div class="notification row" id="n7" style="display: none;">
+                        <div class="col-md-3 not_img">
+                            <img src=" assets/news1.jpg" alt="">
+                        </div>
+                        <div class="col-md-8 not_content">
+                            <h3 style="text-transform:uppercase;">Ecuador Investigates Data Breach</h3>
+                            <p>The personal data of up to 20 million people, more than the country’s population, was
+                                made available online.</p>
+                        </div>
+                        <div class="col-md-1 not_next">
+                            <button type="button" id="next_news" style="background: transparent;border: none;"
+                                onclick="next_click('7')">
+                                <a class="arrowright">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <div class="shadow"></div>
+                                </a></button>
+                        </div>
+                    </div>
+                    <div class="notification row" id="n8" style="display: none;">
+                        <div class="col-md-3 not_img">
+                            <img src=" assets/news9.jpg" alt="">
+                        </div>
+                        <div class="col-md-8 not_content">
+                            <h3 style="text-transform:uppercase;">Microsoft Zero-Day Flaw Addressed in Out-of-Band
+                                Security Update</h3>
+                            <p>Microsoft has issued a patch for an Internet Explorer remote code execution flaw that is
+                                being actively exploited in the wild.</p>
+                        </div>
+                        <div class="col-md-1 not_next">
+                            <button type="button" id="next_news" style="background: transparent;border: none;"
+                                onclick="next_click('8')">
+                                <a class="arrowright">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <div class="shadow"></div>
+                                </a></button>
+                        </div>
+                    </div>
+                    <div class="notification row" id="n9" style="display: none;">
+                        <div class="col-md-3 not_img">
+                            <img src=" assets/news2.jpg" alt="">
+                        </div>
+                        <div class="col-md-8 not_content">
+                            <h3>Bank of Tanzania fines NBC for data breach</h3>
+                            <p>NBC Bank has been slapped with a Sh1 billion penalty for failure to establish secondary
+                                data centre, only a month after the Diamond Trust Bank was given a similar penalty.</p>
+                        </div>
+                        <div class="col-md-1 not_next">
+                            <button type="button" id="next_news" style="background: transparent;border: none;"
+                                onclick="next_click('9')">
+                                <a class="arrowright">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <div class="shadow"></div>
+                                </a></button>
+                        </div>
+                    </div>
+                    <div class="notification row" id="n10" style="display: none;">
+                        <div class="col-md-3 not_img">
+                            <img src=" assets/news8.jpg" alt="">
+                        </div>
+                        <div class="col-md-8 not_content">
+                            <h3>India Ranked Highest in IoT Cybersecurity Attacks</h3>
+                            <p>With 22 per cent jump in cyberattacks on Internet of Things (IoT) deployments in the
+                                country. This was the second consecutive quarter that the country topped the cyber
+                                attack victims list.</p>
+                        </div>
+                        <div class="col-md-1 not_next">
+                            <button type="button" id="next_news" style="background: transparent;border: none;"
+                                onclick="next_click('0')">
+                                <a class="arrowright">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <div class="shadow"></div>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cybernews">
+        <div id="hidden1" class="">
+            <h1 style="font-size: -webkit-xxx-large;">Top <span style="color:#00fda9;">Cyber-Attacks 2019</span></h1><br>
+            <h3>WE PROTECT YOU FROM <span style="color: red;">THESE</span></h3>
+        </div>
+        <div class="slide hi-slide">
+            <div class="hi-prev "></div>
+            <div class="hi-next "></div>
+            <ul>
+                <li>
+                    <div class="card ">
+                        <div class="img-box">
+                            <img src=" assets/cyber1.png">
+                        </div>
+                        <div class="content">
+                            <span style="color: red;font-weight: bold;"> SOCIAL ENGINEERING</span>
+                            <span style="color: black"><br></span>
+                            <p>Social engineering is an attack vector that relies heavily on human interaction and often involves manipulating people into breaking normal security procedures and practices in order to gain access to systems or networks for financial gain.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card ">
+                        <div class="img-box">
+                            <img src=" assets/malware.png">
+                        </div>
+                        <div class="content">
+                            <span style="color: red;font-weight: bold;"> MALWARE</span>
+                            <span style="color: black"><br></span>
+                            <p>Malware is any piece of software that was written with the intent of damaging devices, stealing data, and generally causing a mess. Viruses, Trojans, spyware, and ransomware are among the different kinds of malware.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card ">
+                        <div class="img-box">
+                            <img src=" assets/phishing.jpg">
+                        </div>
+                        <div class="content">
+                            <span style="color: red;font-weight: bold;"> E-MAIL AND PHISHING</span>
+                            <span style="color: black"><br></span>
+                            <p>Phishing attacks are the practice of sending fraudulent communications that appear to come from a reputable source. It is usually done through email. The goal is to steal sensitive data like credit card and login information or to install malware on the victim’s machine.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card ">
+                        <div class="img-box">
+                            <img src="assets/p1-01.png">
+                        </div>
+                        <div class="content">
+                            <span style="color: red;font-weight: bold;">PASSWORDS</span>
+                            <span style="color: black"><br></span>
+                            <p>Password cracking is a fundamental hacking and digital forensics skill. Nearly every system is authenticated by the traditional username and password and even if 2-factor authentication is used, one is usually a password.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card ">
+                        <div class="img-box">
+                            <img src=" assets/targeted.jpeg">
+                        </div>
+                        <div class="content">
+                            <span style="color: red;font-weight: bold;">TARGETED ATTACKS</span>
+                            <span style="color: black"><br></span>
+                            <p>A targeted attack is any malicious attack that is targeted to a specific individual, company or system and is designed to infiltrate a particular company and associated systems, a targeted attack is primarily used to initiate corporate espionage against rival firms.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                        <div class="card ">
+                                <div class="img-box">
+                                        <img src=" assets/2fa.png">
+                                </div>
+                                <div class="content">
+                                        <span style="color: red;font-weight: bold;">2-FACTOR
+                                                <br>AUTHENTICATION</span>
+                                        <span style="color: black"><br></span>
+                                        <p>2FA is the most adnvanced form of securing data. First, a
+                                                user will enter their username and a password. Then,
+                                                instead of immediately gaining access, they will be
+                                                required to provide another piece of information.</p>
+                                </div>
+                        </div>
+                  
+                </li>
+                <li>
+                        <div class="card ">
+                                <div class="img-box">
+                                        <img src=" assets/socialnetworks.jpg">
+                                </div>
+                                <div class="content">
+                                        <span style="color: red;font-weight: bold;"> SOCIAL
+                                                NETWORKS</span>
+                                        <span style="color: black"><br></span>
+                                        <p>Social networking sites destines to secure their users but
+                                                the intruders and attackers are able to outsmart the
+                                                security measures by exploiting user's privacy and
+                                                identity confidentiality using several techniques.</p>
+                                </div>
+                        </div>
+                   
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+    <iframe src=" nan/index.html" width="100%" height="600px"></iframe>
+
+
+
+    <div class="container-fluid" style="z-index: 99;">
+        <div id="ourfeatures" class="scrollTo">
+            <div class="head">
+                <h3 id="head_f" class="text-align-center">About &nbsp;<span
+                        style="color: #00fda9;">backup</span>
+                </h3>
+            </div>
+            <section class="backup">
+                <div class="cont">
+                    <div class="back_card">
+                        <div class="face face1">
+                            <div class="content">
+                                <!-- <img   src=" assets/what.png" > -->
+                                <h2>What</h2>
+                                <p>Backup is a general gamified cybersecurity training provider aiming towards securing
+                                    the weakest link in any Security System i.e. human beings. Users do not need any
+                                    prior background in cyber-security and advanced technical proficiency. After
+                                    completion, you will be more digitally aware and less prone to being digitally
+                                    compromised.</p>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <!-- <img src=" assets/news1.jpg"> -->
+                            <h2></h2>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <div class="face face1">
+                            <div class="content">
+                                <h2>Why</h2>
+                                <p>According to our market research, for a company, asking an employee to take part in training doesn’t help in direct profit-making.
+ 
+                                        From a technology standpoint, 2 Factor Authentication is quite secure from the system side yet is being continuously compromised due to human ignorance. 
+                                         
+                                        This training is based on real-events which brought havoc in well-known companies and is developed along with an intelligence system to specifically highlight and work on your weak points in the digital space.</p>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <h2></h2>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <div class="face face1">
+                            <div class="content">
+                                <h2>How</h2>
+                                <p>We train you using a gamified approach where you go through an experience-based
+                                    training, the key element of experience-based learning is that the learners analyze
+                                    their experience by reflecting, evaluating and reconstructing it, in order to draw
+                                    meaning from it. We provide a multiplayer attack - defense simulator, recursive
+                                    weekly training, and continuous feedback reports.</p>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <h2></h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div style="padding-bottom:px;margin: 5% 0 -7% 0;
+            text-align: center;">
+                <a href=" html/product.html"><button id="more">Read More...</button></a>
+            </div>
+        </div>
+        <div id="ourteam" class="scrollTo">
+            <section class="parallax">
+
+                <div class="row" style="padding-top:50px">
+                    <div class="col-md-6">
+                        <div id="hidden2" class="animation-element slide-left testimonial">
+                            <h1>Our <span style="color:#00fda9;">Team</span></h1>
+                        </div>
+                        <div class="cssanimation sequence fadeInBottom" style="line-height: 1.6;">
+                            <p style="font-weight: 600;   ">
+                                We are a group of passionate individuals equipped with a precise blend of knowledge and
+                                talent specializing in cyber-security and gaming mechanics. Our team has the essential
+                                skill set and is zealous to deliver a coalescence experience to help train industry
+                                professionals.
+                            </p>
+                            <div style="text-align: center;padding-bottom:50px;text-align: left;">
+                                <a href=" html/aboutus.html"><button id="more">Read More...</button></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-6" style="z-index:0;">
+                        <img class="images team_img" src=" Website Template/ourteam.jpg">
+                        <!-- <img class="images team_img" src=" assets/team.png"> -->
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="contactus" class="scrollTo">
+            <section class="parallax">
+
+                <div class="row" style="margin-top:10px">
+                    <div class="col-md-6" style="z-index:0;">
+                        <img class="images cont_img" src=" Website Template/contact_img.jpg">
+                    </div>
+                    <div class="col-md-6">
+                        <div id="hidden2" class="">
+                            <h1>Contact <span style="color:#00fda9;">Us</span></h1>
+                        </div>
+                        <div class="cssanimation sequence fadeInBottom" style="line-height: 1.6;">
+                            <p style="font-weight: 600;">
+                                    We appreciate your interest in Backup. We hope we will be hearing from you more, for better communication please feel free to approach us anytime. Get answers to your questions and doubts about our products and support.
+                            </p>
+                            <div style="padding-bottom:50px;text-align: left;">
+                                <a href=" html/contact.html"><button id="more">Get in touch..</button></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="container-fluid ">
+        <div class="row">
+            <div class="col-md-4 icon">
+                <a href="#"><i class="fab fa-facebook-f fa-2x" id="foot_icon"></i></a>
+                <a href="#" style="margin:0 15px 0 15px"><i class="fab fa-instagram fa-2x" id="foot_icon"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x" id="foot_icon"></i></a>
+            </div>
+            <div class="col-md-4">
+                <!-- <h3 style="color: white"><a href="https://nirbhaynaruka.github.io/team/">Developers</a></h3> -->
+            </div>
+            <div class="col-md-4 quaffle" >
+                <p>Design and Developed by <a href=" html/task.html"><span style="font-weight: bold;color:red;">T.A.S.K</span></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var map = new Datamap({
+            element: document.getElementById('container')
+        });
+    </script>
+    <script>
+        document.onreadystatechange = function () {
+            var state = document.readyState
+            // document.getElementById('load').style.overflow = "hidden";
+            if (state == 'complete') {
+                setTimeout(function () {
+                    document.getElementById('interactive');
+                    document.getElementById('load').style.visibility = "hidden";
+                }, 4000);
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src=" js/jquery.hislide.js"></script>
+    <script>
+        $('.slide').hiSlide();
+    </script>
+    <script src=" js/animation.js"></script>
+    <script src=" js/particles.js"></script>
+    <script src=" jquery-3.4.1.min.js"></script>
+    <script src=" js/app.js"></script>
+    <script src=" js/index.js"></script>
+
+</body>
+
+</html>

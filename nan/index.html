@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+
+<head>
+
+        <title>jQuery hislide Demo</title>
+
+
+
+        <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet"> -->
+        <!-- <link rel="stylesheet" href="swiper.min.css"> -->
+        <!-- <link rel="stylesheet" href="team.css"> -->
+
+
+        <style>
+                @font-face {
+                        font-family: 'Myname';
+                        font-style: normal;
+                        font-weight: 700;
+                        src: local('Segoe UI Bold'), local('SegoeUI-bold'), local('segoeuib');
+                }
+
+                @font-face {
+                        font-family: 'Myname';
+                        font-style: normal;
+                        font-weight: 600;
+                        src: local('Segoe UI Semibold'), local('SegoeUI-Semibold');
+                }
+
+                @font-face {
+                        font-family: 'Myname';
+                        font-style: normal;
+                        font-weight: 400;
+                        src: local('Segoe UI'), local('SegoeUI');
+                }
+
+                @font-face {
+                        font-family: 'Myname';
+                        font-style: normal;
+                        font-weight: 300;
+                        src: local('Segoe UI Light'), local('SegoeUI-Light');
+                }
+
+
+                body {
+
+                        overflow-x: hidden;
+                        font-family: 'Myname';
+
+                }
+
+               
+
+                p {
+                        text-align: justify;
+                        font-family: 'Segoe UI';
+                        font-weight: 400;
+                }
+
+                h1 {
+                        margin: 150px auto 30px auto;
+                        text-align: center;
+                        color: #fff;
+                }
+
+                .cybernews {
+                        margin: 5% 0 5% 0;
+                        text-align: center;
+                }
+
+                /* .cybernews h1 ,span{
+    font-size: -webkit-xxx-large;
+} */
+
+                .hi-slide {
+                        position: relative;
+                        width: 754px;
+                        height: 292px;
+                        margin: 115px auto 0;
+                }
+
+                .hi-prev,
+                .hi-next {
+                        padding-right: 51%;
+                        z-index: 20;
+                        background-color: transparent !important;
+                        padding-top: 36%;
+                }
+
+                .hi-slide .hi-next,
+                .hi-slide .hi-prev {
+                        position: absolute;
+                        top: 50%;
+                        width: 40px;
+                        height: 40px;
+                        margin-top: -20px;
+                        /* border-radius: 50px;  */
+
+
+                        line-height: 40px;
+                        text-align: center;
+                        cursor: pointer;
+                        background-color: #fff;
+                        color: black;
+                        transition: all 0.6s;
+                        font-size: 20px;
+                        font-weight: bold;
+                }
+
+                .hi-slide .hi-next:hover,
+                .hi-slide .hi-prev:hover {
+                        opacity: 1;
+                        background-color: #fff;
+                }
+
+                .hi-slide .hi-prev {
+                        left: -200px;
+                }
+
+                .hi-slide .hi-prev::before {
+                        content: '';
+                }
+
+                .hi-slide .hi-next {
+                        right: -200px;
+                }
+
+                .hi-slide .hi-next::before {
+                        content: '';
+                }
+
+                .hi-slide>ul {
+                        list-style: none;
+                        position: relative;
+                        width: 754px;
+                        height: 292px;
+                        margin: 0;
+                        margin-left: -67px;
+                        margin-top:
+                                padding: 0;
+                }
+
+
+                .hi-slide>ul>li {
+                        overflow: hidden;
+                        position: absolute;
+                        z-index: 0;
+                        left: 377px;
+                        top: 146px;
+                        width: 0;
+                        height: 100px;
+                        margin: 0;
+                        padding: 0;
+                        /* border: 3px solid #fff;               */
+                        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .25);
+                        /* padding: 50px 20px; */
+                        background-color: #fff;
+                        cursor: pointer;
+                }
+
+                .hi-slide>ul>li>img {
+                        width: 100%;
+                        height: 100%;
+                        background-position: center;
+                }
+
+
+
+                .card {
+                        /* margin: 10%; */
+                        position: relative;
+                        background: ;
+                        overflow: ;
+
+                        transition: 0.5s;
+                }
+
+                .card .img-box {
+                        /* position: absolute; */
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+
+                        transition: 0.5s;
+
+                }
+
+                /* .card:hover .img-box{
+          opacity: 0.3;
+          } */
+                .card .img-box img {
+                        width: 100%;
+                        height: 20vh;
+                        padding: 5px;
+                }
+
+                .card .content {
+                        position: absolute;
+                        width: 100%;
+                        height: 75%;
+                        bottom: -80%;
+                        text-align: center;
+                        transition: 0.5s;
+                }
+
+                .card .content span {
+                        font-size: 1.2em;
+                }
+
+                .card .content p {
+                        font-size: 0.9em;
+                        padding: 10px;
+                }
+
+                /* news end */
+        </style>
+</head>
+
+<body>
+        <div class="cybernews">
+
+                <div class="slide hi-slide">
+                        <div class="hi-prev "></div>
+                        <div class="hi-next "></div>
+                        <ul>
+                                <li>
+                                        <div class="card ">
+                                                <div class="img-box">
+                                                        <img src="../assets/2fa.png">
+                                                </div>
+                                                <div class="content">
+                                                        <span style="color: red;font-weight: bold;">2-FACTOR
+                                                                <br>AUTHENTICATION</span>
+                                                        <span style="color: black"><br></span>
+                                                        <p>2FA is the most adnvanced form of securing data. First, a
+                                                                user will enter their username and a password. Then,
+                                                                instead of immediately gaining access, they will be
+                                                                required to provide another piece of information.</p>
+                                                </div>
+                                        </div>
+                                </li>
+                                <li>
+                                        <div class="card ">
+                                                <div class="img-box">
+                                                        <img src="../assets/cyber1.png">
+                                                </div>
+                                                <div class="content">
+                                                        <span style="color: red;font-weight: bold;">MOBILE
+                                                                DEVICES</span>
+                                                        <span style="color: black"><br></span>
+                                                        <p>Like viruses and spyware that can infect your PC, there are a
+                                                                variety of security threats that can affect mobile
+                                                                devices. These threats can be application-based threats,
+                                                                web-based threats, network-based threats or even
+                                                                physical threats.</p>
+                                                </div>
+                                        </div>
+                                </li>
+                                <li>
+                                        <div class="card ">
+                                                <div class="img-box">
+                                                        <img src="../assets/socialnetworks.jpg">
+                                                </div>
+                                                <div class="content">
+                                                        <span style="color: red;font-weight: bold;"> SOCIAL
+                                                                NETWROKS</span>
+                                                        <span style="color: black"><br></span>
+                                                        <p>Social networking sites destines to secure their users but
+                                                                the intruders and attackers are able to outsmart the
+                                                                security measures by exploiting user's privacy and
+                                                                identity confidentiality using several techniques.</p>
+                                                </div>
+                                        </div>
+                                </li>
+                                <li>
+                                        <div class="card ">
+                                                <div class="img-box">
+                                                        <img src="../assets/datasecurity.jpg">
+                                                </div>
+                                                <div class="content">
+                                                        <span style="color: red;font-weight: bold;">DATA SECURITY</span>
+                                                        <span style="color: black"><br></span>
+                                                        <p>Data security refers to protective digital privacy measures
+                                                                that are applied to prevent unauthorized access to
+                                                                computers, databases, and websites. Data security is an
+                                                                essential aspect of IT for organizations of every size
+                                                                and type.</p>
+                                                </div>
+                                        </div>
+                                </li>
+
+                                <li>
+                                        <div class="card ">
+                                                <div class="img-box">
+                                                        <img src="../assets/browsingsafely.jpg">
+                                                </div>
+                                                <div class="content">
+                                                        <span style="color: red;font-weight: bold;">BROWSING
+                                                                SAFELY</span>
+                                                        <span style="color: black"><br></span>
+                                                        <p>Being at the wrong place at the wrong time can compromise
+                                                                your internet browsing safety. Seemingly reputable sites
+                                                                may contain spyware traps, or the sites themselves may
+                                                                be counterfeit—phishing sites posing as the real thing
+                                                                to lure you into their scams.</p>
+                                                </div>
+                                        </div>
+                                </li>
+                                <li>
+                                        <div class="card ">
+                                                <div class="img-box">
+                                                        <img src="../assets/socialnetworks.jpg">
+                                                </div>
+                                                <div class="content">
+                                                        <span style="color: red;font-weight: bold;"> SOCIAL
+                                                                ENGINEERING</span>
+                                                        <span style="color: black"><br></span>
+                                                        <p>Social engineering is an attack vector that relies heavily on
+                                                                human interaction and often involves manipulating people
+                                                                into breaking normal security procedures and practices
+                                                                in order to gain access to systems or networks for
+                                                                financial gain.</p>
+                                                </div>
+                                        </div>
+                                </li>
+                                <li>
+                                        <div class="card ">
+                                                <div class="img-box">
+                                                        <img src="../assets/malware.png">
+                                                </div>
+                                                <div class="content">
+                                                        <span style="color: red;font-weight: bold;"> MALWARE</span>
+                                                        <span style="color: black"><br></span>
+                                                        <p>Malware is any piece of software that was written with the
+                                                                intent of damaging devices, stealing data, and generally
+                                                                causing a mess. Viruses, Trojans, spyware, and
+                                                                ransomware are among the different kinds of malware.</p>
+                                                </div>
+                                        </div>
+                                </li>
+
+                        </ul>
+                </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="js/jquery.hislide.js"></script>
+        <script>
+                $('.slide').hiSlide();
+        </script>
+</body>
+
+</html>
