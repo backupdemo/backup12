@@ -8,31 +8,13 @@
   <title>Responsive Smooth Card Carousel Demo</title>
   <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
   <style>
-    html {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #ece9e6;
-  background-image: url("../assets/Artboard.png");
-
-    }
-.bg{
-}
-    img {
-      width: 100%;
-    }
-
-    html body {
+   .bg {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      font-family: 'Quicksand', sans-serif;
       overflow-x: hidden;
-      position: relative;
-      top: -2.5rem;
     }
 
     .card-carousel {
@@ -43,7 +25,7 @@
     }
 
     .card-carousel .my-card {
-      height: 30rem;
+      height: 21rem;
       width: 17rem;
       position: relative;
       z-index: 1;
@@ -195,6 +177,8 @@
       opacity: 1;
       pointer-events: auto;
       transition: 1s;
+      box-shadow: 0px 10px 42px rgba(243, 243, 243, 0.4);
+
     }
 
     .card-carousel .my-card.prev,
@@ -205,6 +189,56 @@
       opacity: 0.6;
       pointer-events: auto;
       transition: 1s;
+    }
+
+
+    .card {
+      /* margin: 10%; */
+      position: relative;
+      background: ;
+      overflow: ;
+
+      transition: 0.5s;
+    }
+
+    .card .img-box {
+      /* position: absolute; */
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      transition: 0.5s;
+
+    }
+
+    /* .card:hover .img-box{
+          opacity: 0.3;
+          } */
+    .card .img-box img {
+      width: 100%;
+      height: 26vh;
+      padding: 5px;
+    }
+
+    .card .content {
+      position: absolute;
+      width: 100%;
+      /* height: 75%; */
+      /* bottom: -80%; */
+      text-align: center;
+      transition: 0.5s;
+      background-color: white;
+      box-shadow: 0px 10px 42px rgba(243, 243, 243, 0.4);
+
+    }
+
+    .card .content span {
+      font-size: 1.2em;
+    }
+
+    .card .content p {
+      font-size: 0.9em;
+      padding: 10px;
     }
   </style>
 </head>

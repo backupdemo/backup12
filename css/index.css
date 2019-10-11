@@ -71,6 +71,9 @@ iframe {
     align-items: center;
 }
 .cont .back_card .face.face1{
+    background-image: url("../assets/queface1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     box-sizing: border-box;
     padding: 20px;
 }
@@ -92,23 +95,23 @@ iframe {
 }
 .cont .back_card:nth-child(1) .face.face2{
     background: linear-gradient(45deg, rgb(0, 0, 0), #00fda9 ) ;
-    /* background-image: url("../assets/what.png");
+    background-image: url("../assets/queface2.png");
     background-size: 100% 100%;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
 
 }
 .cont .back_card:nth-child(2) .face.face2{
     background: linear-gradient(45deg, #00fda9, #5e5e5e ) ;
-    /* background-image: url("../assets/news6.jpg");
+    background-image: url("../assets/queface2.png");
     background-size: 100% 100%;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     
 }
 .cont .back_card:nth-child(3) .face.face2{
     background: linear-gradient(45deg, #000000, #00fda9 ) ;
-    /* background-image: url("../assets/news3.jpg");
+    background-image: url("../assets/queface2.png");
     background-size: 100% 100%;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
 }
 .cont .back_card:hover .face.face2{
     height: 60px;
@@ -507,7 +510,12 @@ tr {
 }
 .cybernews{
     margin:5% 0 5% 0;
+   
+}
+.cybernews #hidden1{
     text-align: center;
+    margin-bottom: 3%;
+
 }
 /* .cybernews h1 ,span{
     font-size: -webkit-xxx-large;
@@ -628,126 +636,6 @@ tr {
 /* news end */
 
 
-.cybernews1{
-    margin:5% 0 5% 0;
-    text-align: center;
-}
-/* .cybernews h1 ,span{
-    font-size: -webkit-xxx-large;
-} */
-
-.hi-slide1 { position: relative; width: 754px; height: 292px; margin: 115px auto 0; }
-.hi-prev1 , .hi-next1{
-    padding-right: 51%;
-    z-index: 20;
-    background-color: transparent !important;
-    padding-top: 36%;
-}
-.hi-slide1 .hi-next1,
-.hi-slide1 .hi-prev1 
-            { position: absolute;
-              top: 50%; 
-              width: 40px;
-              height: 40px; 
-              margin-top: -20px;     
-                /* border-radius: 50px;  */
-                 
-                
-              line-height: 40px;
-              text-align: center; 
-              cursor: pointer;
-              background-color: #fff; 
-              color: black;               
-              transition: all 0.6s;
-              font-size: 20px; 
-                font-weight: bold;
-            }
-           .hi-slide1 .hi-next1:hover, 
-            .hi-slide1 .hi-prev1:hover 
-            {
-            opacity: 1; 
-            background-color: #fff;  
-            }
-            
-           .hi-slide1 .hi-prev1 { left: -200px; }
-            
-    .hi-slide1 .hi-prev1::before { content: ''; }
-    .hi-slide1 .hi-next1 { right: -200px; }
-    .hi-slide1 .hi-next1::before { content: ''; }
-    
-            .hi-slide1 > ul
-                    {   
-                        list-style: none; 
-                        position: relative;
-                        width: 754px; 
-                        height: 292px; 
-                        margin: 0;
-                        margin-left: -67px;
-                        margin-top: 
-                        padding: 0;
-            }
-            
-            
-        .hi-slide1 > ul > li {
-            overflow: hidden; 
-            position: absolute; 
-            z-index: 0; 
-            left: 377px;
-            top: 146px; 
-            width: 0; 
-            height: 100px; 
-            margin: 0; 
-            padding: 0;
-            /* border: 3px solid #fff;               */
-            box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.25);
-            /* padding: 50px 20px; */
-            background-color: #fff; 
-            cursor: pointer; }
-            
-        .hi-slide1 > ul > li > img { width: 100%; height: 100%; background-position: center;}
-
- 
-
-        .card1 {
-            /* margin: 10%; */
-            position: relative;
-            background:;
-            overflow: ;
-        
-            transition: 0.5s;
-          }
-          .card1 .img-box1{
-            /* position: absolute; */
-            top: 0;
-            left: 0;
-            width: 100%;
-            
-            transition: 0.5s;
-          
-          }
-          /* .card:hover .img-box{
-          opacity: 0.3;
-          } */
-          .card1 .img-box1 img{
-            width: 100%;
-            height: 20vh;
-            padding: 5px;
-          }
-          .card1 .content1{
-            position: absolute;
-            width: 100%;
-            height: 75%;
-            bottom: -80%;
-            text-align: center;
-            transition: 0.5s;
-          }
-          .card1 .content1 span{
-              font-size: 1.2em;
-          }
-          .card1 .content1 p{
-              font-size:0.9em;
-              padding: 4px;
-          }
 /* news end */
 
     #contactus,
@@ -1314,7 +1202,12 @@ tr {
 }
 .cybernews{
     margin:5% 0 5% 0;
+   
+}
+.cybernews #hidden1{
     text-align: center;
+    margin-bottom: 3%;
+
 }
 /* .cybernews h1 ,span{
     font-size: -webkit-xxx-large;
@@ -1990,7 +1883,12 @@ tr {
 }
 .cybernews{
     margin:5% 0 5% 0;
+   
+}
+.cybernews #hidden1{
     text-align: center;
+    margin-bottom: 3%;
+
 }
 /* .cybernews h1 ,span{
     font-size: -webkit-xxx-large;
@@ -2600,7 +2498,12 @@ visibility: hidden;
 }
 .cybernews{
     margin:5% 0 5% 0;
+   
+}
+.cybernews #hidden1{
     text-align: center;
+    margin-bottom: 3%;
+
 }
 /* .cybernews h1 ,span{
     font-size: -webkit-xxx-large;
@@ -3196,7 +3099,12 @@ visibility: hidden;
 }
 .cybernews{
     margin:5% 0 5% 0;
+   
+}
+.cybernews #hidden1{
     text-align: center;
+    margin-bottom: 3%;
+
 }
 /* .cybernews h1 ,span{
     font-size: -webkit-xxx-large;
@@ -3779,7 +3687,12 @@ visibility: hidden;
 }
 .cybernews{
     margin:5% 0 5% 0;
+   
+}
+.cybernews #hidden1{
     text-align: center;
+    margin-bottom: 3%;
+
 }
 /* .cybernews h1 ,span{
     font-size: -webkit-xxx-large;

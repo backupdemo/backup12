@@ -1,0 +1,234 @@
+.bg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 9%;
+    /* overflow-x: hidden; */
+  }
+
+  .card-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: -10%;
+
+  }
+
+  .card-carousel .my-card {
+    height: 25rem;
+    width: 17rem;
+    position: relative;
+    z-index: 1;
+    -webkit-transform: scale(0.6) translateY(-2rem);
+    transform: scale(0.6) translateY(-2rem);
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: none;
+    background: white;
+    transition: 1.5s;
+  }
+
+  .card-carousel .my-card:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    bottom: -5rem;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+  }
+
+  .card-carousel .my-card:nth-child(0):before {
+    content: '0';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .card-carousel .my-card:nth-child(1):before {
+    content: '1';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .card-carousel .my-card:nth-child(2):before {
+    content: '2';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .card-carousel .my-card:nth-child(3):before {
+    content: '3';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .card-carousel .my-card:nth-child(4):before {
+    content: '4';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .card-carousel .my-card:nth-child(5):before {
+    content: '5';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .card-carousel .my-card:nth-child(6):before {
+    content: '6';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .card-carousel .my-card:nth-child(7):before {
+    content: '7';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .card-carousel .my-card:nth-child(8):before {
+    content: '8';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .card-carousel .my-card:nth-child(9):before {
+    content: '9';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .card-carousel .my-card.active {
+    z-index: 3;
+    -webkit-transform: scale(1) translateY(0) translateX(0);
+    transform: scale(1) translateY(0) translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    transition: 1.5s;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+
+  }
+
+  .card-carousel .my-card.prev,
+  .card-carousel .my-card.next {
+    z-index: 2;
+    -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+    transform: scale(0.8) translateY(-1rem) translateX(0);
+    opacity: 0.6;
+    pointer-events: auto;
+    transition: 1.5s;
+  }
+
+
+  .card {
+    /* margin: 10%; */
+    position: relative;
+   
+
+    transition: 0.5s;
+  }
+
+  .card .img-box {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    transition: 0.5s;
+
+  }
+
+  /* .card:hover .img-box{
+        opacity: 0.3;
+        } */
+  .card .img-box img {
+    width: 100%;
+    height: 26vh;
+    padding: 5px;
+  }
+
+  .card .content {
+    position: absolute;
+    width: 100%;
+    /* height: 75%; */
+    /* bottom: -80%; */
+    text-align: center;
+    transition: 0.5s;
+    background-color: white;
+    /* box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important; */
+
+  }
+
+  .card .content span {
+    font-size: 1.2em;
+  }
+
+  .card .content p {
+    font-size: 0.9em;
+    padding: 10px;
+  }
