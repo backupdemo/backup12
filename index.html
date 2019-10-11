@@ -29,8 +29,11 @@
     <!-- <link rel="stylesheet" href="css/aboutus.css"> -->
     <link rel="stylesheet" href=" css/animation.css">
     <link rel="stylesheet" href=" css/index.css">
+    <link rel="stylesheet" href=" css/caraousel.css">
     <!-- <link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css"> -->
     <!-- <link rel="stylesheet" href=" swiper-master/dist/css/swiper.min.css"> -->
+
+
     <title>BackUp</title>
     <script src=" js/mapdata.js"></script>
     <script src=" js/svg.js"></script>
@@ -71,7 +74,7 @@
 </head>
 
 <body onload="insert()">
-    <div id="load"></div>
+    <!-- <div id="load"></div> -->
 
     <header class="container-fluid p-0 fixed" id="myHeader">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -128,11 +131,12 @@
                 <div class="opacity" style="background:rgb(0,0,0.)"></div>
                 <div class="main-heading hide" id="fadein" style="z-index:10;display: none;">
                     <div class="login100-pic js-tilt" data-tilt>
-                        <img src="../assets/logonew.png" alt="IMG" style="width: 50%; margin: 0 50%;">
+                        <img src=" assets/logonew.png" alt="IMG" style="width: 50%; margin: 0 50%;">
                     </div>
                     <h3 style="color: white; padding-top:50px;z-index: 10; ">
                         REIMAGINING CYBER-SECURITY TRAINING</h3>
                 </div>
+                <p class="powered">pushkar aake bata ke jayega</p>
                 <div class="noti">
                     <h4 style="color: red;text-align: center;">CYBER <span style="color: white">CORNER</span></h4>
                     <div class="notification row" id="n1">
@@ -333,20 +337,20 @@
     </div>
 
 
-    <div class="cybernews">
+    <div class="cybernews" style="margin-bottom: 8%;">
         <div id="hidden1" class="">
             <h1 style="font-size: -webkit-xxx-large;">Top <span style="color:#00fda9;">Cyber-Attacks 2019</span></h1>
             <br>
             <h3>WE PROTECT YOU FROM <span style="color: red;">THESE</span></h3>
         </div>
-        <div class="slide hi-slide">
-            <div class="hi-prev "></div>
-            <div class="hi-next "></div>
-            <ul>
-                <li>
+
+
+        <div class="bg">
+            <div class="card-carousel">
+                <div class="my-card">
                     <div class="card ">
                         <div class="img-box">
-                            <img src=" assets/cyber1.png">
+                            <img src=" assets/socialeng.png">
                         </div>
                         <div class="content">
                             <span style="color: red;font-weight: bold;"> SOCIAL ENGINEERING</span>
@@ -356,8 +360,9 @@
                                 order to gain access to systems or networks for financial gain.</p>
                         </div>
                     </div>
-                </li>
-                <li>
+                </div>
+
+                <div class="my-card">
                     <div class="card ">
                         <div class="img-box">
                             <img src=" assets/malware.png">
@@ -366,56 +371,64 @@
                             <span style="color: red;font-weight: bold;"> MALWARE</span>
                             <span style="color: black"><br></span>
                             <p>Malware is any piece of software that was written with the intent of damaging devices,
-                                stealing data, and generally causing a mess. Viruses, Trojans, spyware, and ransomware
-                                are among the different kinds of malware.</p>
+                                stealing data, and
+                                generally causing a mess. Viruses, Trojans, spyware, and ransomware are among the
+                                different kinds of
+                                malware.</p>
                         </div>
                     </div>
-                </li>
-                <li>
+                </div>
+                <div class="my-card">
                     <div class="card ">
                         <div class="img-box">
-                            <img src=" assets/phishing.jpg">
+                            <img src=" assets/email.png">
                         </div>
                         <div class="content">
                             <span style="color: red;font-weight: bold;"> E-MAIL AND PHISHING</span>
                             <span style="color: black"><br></span>
                             <p>Phishing attacks are the practice of sending fraudulent communications that appear to
-                                come from a reputable source. It is usually done through email. The goal is to steal
-                                sensitive data like credit card and login information or to install malware on the
-                                victim’s machine.</p>
+                                come from a
+                                reputable
+                                source. It is usually done through email. The goal is to steal sensitive data like
+                                credit card and login
+                                information or to install malware on the victim’s machine.</p>
                         </div>
                     </div>
-                </li>
-                <li>
+                </div>
+                <div class="my-card">
                     <div class="card ">
                         <div class="img-box">
-                            <img src="assets/p1-01.png">
+                            <img src=" assets/password.png">
                         </div>
                         <div class="content">
                             <span style="color: red;font-weight: bold;">PASSWORDS</span>
                             <span style="color: black"><br></span>
                             <p>Password cracking is a fundamental hacking and digital forensics skill. Nearly every
-                                system is authenticated by the traditional username and password and even if 2-factor
-                                authentication is used, one is usually a password.</p>
+                                system is
+                                authenticated by the traditional username and password and even if 2-factor
+                                authentication is used, one is
+                                usually a password.</p>
                         </div>
                     </div>
-                </li>
-                <li>
+                </div>
+                <div class="my-card">
                     <div class="card ">
                         <div class="img-box">
-                            <img src=" assets/targeted.jpeg">
+                            <img src=" assets/targeted1.png">
                         </div>
                         <div class="content">
                             <span style="color: red;font-weight: bold;">TARGETED ATTACKS</span>
                             <span style="color: black"><br></span>
                             <p>A targeted attack is any malicious attack that is targeted to a specific individual,
-                                company or system and is designed to infiltrate a particular company and associated
-                                systems, a targeted attack is primarily used to initiate corporate espionage against
-                                rival firms.</p>
+                                company or system
+                                and
+                                is designed to infiltrate a particular company and associated systems, a targeted attack
+                                is primarily used
+                                to initiate corporate espionage against rival firms.</p>
                         </div>
                     </div>
-                </li>
-                <li>
+                </div>
+                <div class="my-card">
                     <div class="card ">
                         <div class="img-box">
                             <img src=" assets/2fa.png">
@@ -430,12 +443,11 @@
                                 required to provide another piece of information.</p>
                         </div>
                     </div>
-
-                </li>
-                <li>
+                </div>
+                <div class="my-card">
                     <div class="card ">
                         <div class="img-box">
-                            <img src=" assets/socialnetworks.jpg">
+                            <img src=" assets/networking.png">
                         </div>
                         <div class="content">
                             <span style="color: red;font-weight: bold;"> SOCIAL
@@ -447,16 +459,61 @@
                                 identity confidentiality using several techniques.</p>
                         </div>
                     </div>
+                </div>
+                <div class="my-card">
+                    <div class="card ">
+                        <div class="img-box">
+                            <img src=" assets/mobile.png">
+                        </div>
+                        <div class="content">
+                            <span style="color: red;font-weight: bold;">MOBILE
+                                DEVICES</span>
+                            <span style="color: black"><br></span>
+                            <p>Like viruses and spyware that can infect your PC, there are a
+                                variety of security threats that can affect mobile
+                                devices. These threats can be application-based threats,
+                                web-based threats, network-based threats or even
+                                physical threats.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-card">
 
-                </li>
-
-            </ul>
+                    <div class="card ">
+                        <div class="img-box">
+                            <img src=" assets/browsesafely.png">
+                        </div>
+                        <div class="content">
+                            <span style="color: red;font-weight: bold;">BROWSING
+                                SAFELY</span>
+                            <span style="color: black"><br></span>
+                            <p>Being at the wrong place at the wrong time can compromise
+                                your internet browsing safety. Seemingly reputable sites
+                                may contain spyware traps, or the sites themselves may
+                                be counterfeit—phishing sites posing as the real thing
+                                to lure you into their scams.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-card">
+                <div class="card ">
+                    <div class="img-box">
+                        <img src=" assets/datasecurity.png">
+                    </div>
+                    <div class="content">
+                        <span style="color: red;font-weight: bold;">DATA SECURITY</span>
+                        <span style="color: black"><br></span>
+                        <p>Data security refers to protective digital privacy measures
+                            that are applied to prevent unauthorized access to
+                            computers, databases, and websites. Data security is an
+                            essential aspect of IT for organizations of every size
+                            and type.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
-    <iframe src=" nan/index.html" width="100%" height="600px"></iframe>
-
-
-
     <div class="container-fluid" style="z-index: 99;">
         <div id="ourfeatures" class="scrollTo">
             <div class="head">
@@ -479,7 +536,7 @@
                         </div>
                         <div class="face face2">
                             <!-- <img src=" assets/news1.jpg"> -->
-                            <h2></h2>
+                            <h2>What</h2>
                         </div>
                     </div>
                     <div class="back_card">
@@ -498,7 +555,7 @@
                             </div>
                         </div>
                         <div class="face face2">
-                            <h2></h2>
+                            <h2>Why</h2>
                         </div>
                     </div>
                     <div class="back_card">
@@ -513,7 +570,7 @@
                             </div>
                         </div>
                         <div class="face face2">
-                            <h2></h2>
+                            <h2>How</h2>
                         </div>
                     </div>
                 </div>
@@ -570,7 +627,7 @@
                                 questions and doubts about our products and support.
                             </p>
                             <div style="padding-bottom:50px;text-align: left;">
-                                <a href=" html/contact.html"><button id="more">Get in touch..</button></a>
+                                <a href=" html/contact.html"><button id="more">Get in touch...</button></a>
                             </div>
                         </div>
 
@@ -626,13 +683,152 @@
     <script src=" jquery-3.4.1.min.js"></script>
     <script src=" js/app.js"></script>
     <script src=" js/index.js"></script>
-    <script src="js/jquery/jquery-3.2.1.min.js"></script>
-	<script src="js/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous">
+    </script>
+    <script>
+        $num = $('.my-card').length;
+        $even = $num / 2;
+        $odd = ($num + 1) / 2;
+
+        if ($num % 2 == 0) {
+            $('.my-card:nth-child(' + $even + ')').addClass('active');
+            $('.my-card:nth-child(' + $even + ')').prev().addClass('prev');
+            $('.my-card:nth-child(' + $even + ')').next().addClass('next');
+        } else {
+            $('.my-card:nth-child(' + $odd + ')').addClass('active');
+            $('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
+            $('.my-card:nth-child(' + $odd + ')').next().addClass('next');
+        }
+
+        $('.my-card').click(function () {
+            $slide = $('.active').width();
+            console.log($('.active').position().left);
+
+            if ($(this).hasClass('next')) {
+                $('.card-carousel').stop(false, true).animate({
+                    left: '-=' + $slide
+                });
+            } else if ($(this).hasClass('prev')) {
+                $('.card-carousel').stop(false, true).animate({
+                    left: '+=' + $slide
+                });
+            }
+
+            $(this).removeClass('prev next');
+            $(this).siblings().removeClass('prev active next');
+
+            $(this).addClass('active');
+            $(this).prev().addClass('prev');
+            $(this).next().addClass('next');
+        });
+
+
+        // Keyboard nav
+        $('html body').keydown(function (e) {
+            if (e.keyCode == 37) { // left
+                $('.active').prev().trigger('click');
+            } else if (e.keyCode == 39) { // right
+                $('.active').next().trigger('click');
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+                '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script type="text/javascript">
+        $('body').mousemove(function (e) {
+            var movex = (e.pageX * -1 / 15);
+            var movey = (e.pageY * -1 / 15);
+            $(this).css('background-position', movex + 'px ' + movey + 'px ')
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous">
+    </script>
+    <script>
+        $num = $('.my-card').length;
+        $even = $num / 2;
+        $odd = ($num + 1) / 2;
+
+        if ($num % 2 == 0) {
+            $('.my-card:nth-child(' + $even + ')').addClass('active');
+            $('.my-card:nth-child(' + $even + ')').prev().addClass('prev');
+            $('.my-card:nth-child(' + $even + ')').next().addClass('next');
+        } else {
+            $('.my-card:nth-child(' + $odd + ')').addClass('active');
+            $('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
+            $('.my-card:nth-child(' + $odd + ')').next().addClass('next');
+        }
+
+        $('.my-card').click(function () {
+            $slide = $('.active').width();
+            console.log($('.active').position().left);
+
+            if ($(this).hasClass('next')) {
+                $('.card-carousel').stop(false, true).animate({
+                    left: '-=' + $slide
+                });
+            } else if ($(this).hasClass('prev')) {
+                $('.card-carousel').stop(false, true).animate({
+                    left: '+=' + $slide
+                });
+            }
+
+            $(this).removeClass('prev next');
+            $(this).siblings().removeClass('prev active next');
+
+            $(this).addClass('active');
+            $(this).prev().addClass('prev');
+            $(this).next().addClass('next');
+        });
+
+
+        // Keyboard nav
+        $('html body').keydown(function (e) {
+            if (e.keyCode == 37) { // left
+                $('.active').prev().trigger('click');
+            } else if (e.keyCode == 39) { // right
+                $('.active').next().trigger('click');
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+                '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+<script src=" js/jquery/jquery-3.2.1.min.js"></script>
+<script src=" js/tilt/tilt.jquery.min.js"></script>
+<script >
+    $('.js-tilt').tilt({
+        scale: 1.1
+    })
+</script>
 </body>
 
 </html>

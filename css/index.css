@@ -31,6 +31,15 @@ p{
 iframe {
     border-width: 0;
 }
+
+.login100-pic {
+    width: 350px;
+}
+
+.login100-pic img {
+    max-width: 100%;
+}
+
 /* what why how card */
 #ourfeatures{
     background: black;
