@@ -336,7 +336,13 @@
             </div>
         </footer>
     </div>
-    
+    <script type="text/javascript">
+        $('body').mousemove(function (e) {
+          var movex = (e.pageX * -1 / 15);
+          var movey = (e.pageY * -1 / 15);
+          $(this).css('background-position', movex + 'px ' + movey + 'px ')
+        })
+      </script>
         <script src="../js/animation.js"></script>
         <script src="../js/index.js"></script>
         <script src="../js/scroll.js"></script>

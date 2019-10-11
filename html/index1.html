@@ -1,0 +1,415 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Responsive Smooth Card Carousel Demo</title>
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <style>
+    html {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ece9e6;
+  background-image: url("../assets/Artboard.png");
+
+    }
+.bg{
+}
+    img {
+      width: 100%;
+    }
+
+    html body {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-family: 'Quicksand', sans-serif;
+      overflow-x: hidden;
+      position: relative;
+      top: -2.5rem;
+    }
+
+    .card-carousel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .card-carousel .my-card {
+      height: 30rem;
+      width: 17rem;
+      position: relative;
+      z-index: 1;
+      -webkit-transform: scale(0.6) translateY(-2rem);
+      transform: scale(0.6) translateY(-2rem);
+      opacity: 0;
+      cursor: pointer;
+      pointer-events: none;
+      background: white;
+      transition: 1s;
+    }
+
+    .card-carousel .my-card:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      border-radius: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      bottom: -5rem;
+      -webkit-filter: blur(4px);
+      filter: blur(4px);
+    }
+
+    .card-carousel .my-card:nth-child(0):before {
+      content: '0';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 3rem;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    .card-carousel .my-card:nth-child(1):before {
+      content: '1';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 3rem;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    .card-carousel .my-card:nth-child(2):before {
+      content: '2';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 3rem;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    .card-carousel .my-card:nth-child(3):before {
+      content: '3';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 3rem;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    .card-carousel .my-card:nth-child(4):before {
+      content: '4';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 3rem;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    .card-carousel .my-card:nth-child(5):before {
+      content: '5';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 3rem;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    .card-carousel .my-card:nth-child(6):before {
+      content: '6';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 3rem;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    .card-carousel .my-card:nth-child(7):before {
+      content: '7';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 3rem;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    .card-carousel .my-card:nth-child(8):before {
+      content: '8';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 3rem;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    .card-carousel .my-card:nth-child(9):before {
+      content: '9';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 3rem;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    .card-carousel .my-card.active {
+      z-index: 3;
+      -webkit-transform: scale(1) translateY(0) translateX(0);
+      transform: scale(1) translateY(0) translateX(0);
+      opacity: 1;
+      pointer-events: auto;
+      transition: 1s;
+    }
+
+    .card-carousel .my-card.prev,
+    .card-carousel .my-card.next {
+      z-index: 2;
+      -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+      transform: scale(0.8) translateY(-1rem) translateX(0);
+      opacity: 0.6;
+      pointer-events: auto;
+      transition: 1s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg">
+    <div class="card-carousel">
+      <div class="my-card">
+        <img src="backup10-master/assets/cyber1.png" width="100%">
+      </div>
+      <div class="my-card">
+        <div class="card ">
+          <div class="img-box">
+            <img src="../assets/cyber1.png">
+          </div>
+          <div class="content">
+            <span style="color: red;font-weight: bold;"> SOCIAL ENGINEERING</span>
+            <span style="color: black"><br></span>
+            <p>Social engineering is an attack vector that relies heavily on human interaction and often involves
+              manipulating people into breaking normal security procedures and practices in order to gain access to
+              systems or networks for financial gain.</p>
+          </div>
+        </div>
+      </div>
+      <div class="my-card">
+        <div class="card ">
+          <div class="img-box">
+            <img src="../assets/malware.png">
+          </div>
+          <div class="content">
+            <span style="color: red;font-weight: bold;"> MALWARE</span>
+            <span style="color: black"><br></span>
+            <p>Malware is any piece of software that was written with the intent of damaging devices, stealing data, and
+              generally causing a mess. Viruses, Trojans, spyware, and ransomware are among the different kinds of
+              malware.</p>
+          </div>
+        </div>
+      </div>
+      <div class="my-card">
+        <div class="card ">
+          <div class="img-box">
+            <img src="../assets/phishing.jpg">
+          </div>
+          <div class="content">
+            <span style="color: red;font-weight: bold;"> E-MAIL AND PHISHING</span>
+            <span style="color: black"><br></span>
+            <p>Phishing attacks are the practice of sending fraudulent communications that appear to come from a
+              reputable
+              source. It is usually done through email. The goal is to steal sensitive data like credit card and login
+              information or to install malware on the victim’s machine.</p>
+          </div>
+        </div>
+      </div>
+      <div class="my-card">
+        <div class="card ">
+          <div class="img-box">
+            <img src="../assets/password.png">
+          </div>
+          <div class="content">
+            <span style="color: red;font-weight: bold;">PASSWORDS</span>
+            <span style="color: black"><br></span>
+            <p>Password cracking is a fundamental hacking and digital forensics skill. Nearly every system is
+              authenticated by the traditional username and password and even if 2-factor authentication is used, one is
+              usually a password.</p>
+          </div>
+        </div>
+      </div>
+      <div class="my-card">
+        <div class="card ">
+          <div class="img-box">
+            <img src="../assets/targeted.jpeg">
+          </div>
+          <div class="content">
+            <span style="color: red;font-weight: bold;">TARGETED ATTACKS</span>
+            <span style="color: black"><br></span>
+            <p>A targeted attack is any malicious attack that is targeted to a specific individual, company or system
+              and
+              is designed to infiltrate a particular company and associated systems, a targeted attack is primarily used
+              to initiate corporate espionage against rival firms.</p>
+          </div>
+        </div>
+      </div>
+      <div class="my-card">
+        <div class="card ">
+          <div class="img-box">
+            <img src="../assets/2fa.png">
+          </div>
+          <div class="content">
+            <span style="color: red;font-weight: bold;">2-FACTOR
+              <br>AUTHENTICATION</span>
+            <span style="color: black"><br></span>
+            <p>2FA is the most adnvanced form of securing data. First, a
+              user will enter their username and a password. Then,
+              instead of immediately gaining access, they will be
+              required to provide another piece of information.</p>
+          </div>
+        </div>
+      </div>
+      <div class="my-card">
+        <div class="card ">
+          <div class="img-box">
+            <img src="../assets/socialnetworks.jpg">
+          </div>
+          <div class="content">
+            <span style="color: red;font-weight: bold;"> SOCIAL
+              NETWORKS</span>
+            <span style="color: black"><br></span>
+            <p>Social networking sites destines to secure their users but
+              the intruders and attackers are able to outsmart the
+              security measures by exploiting user's privacy and
+              identity confidentiality using several techniques.</p>
+          </div>
+        </div>
+      </div>
+      <div class="my-card">
+        <div class="card ">
+          <div class="img-box">
+            <img src="../assets/socialnetworks.jpg">
+          </div>
+          <div class="content">
+            <span style="color: red;font-weight: bold;"> SOCIAL
+              NETWORKS</span>
+            <span style="color: black"><br></span>
+            <p>Social networking sites destines to secure their users but
+              the intruders and attackers are able to outsmart the
+              security measures by exploiting user's privacy and
+              identity confidentiality using several techniques.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous">
+  </script>
+  <script>
+    $num = $('.my-card').length;
+    $even = $num / 2;
+    $odd = ($num + 1) / 2;
+
+    if ($num % 2 == 0) {
+      $('.my-card:nth-child(' + $even + ')').addClass('active');
+      $('.my-card:nth-child(' + $even + ')').prev().addClass('prev');
+      $('.my-card:nth-child(' + $even + ')').next().addClass('next');
+    } else {
+      $('.my-card:nth-child(' + $odd + ')').addClass('active');
+      $('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
+      $('.my-card:nth-child(' + $odd + ')').next().addClass('next');
+    }
+
+    $('.my-card').click(function () {
+      $slide = $('.active').width();
+      console.log($('.active').position().left);
+
+      if ($(this).hasClass('next')) {
+        $('.card-carousel').stop(false, true).animate({
+          left: '-=' + $slide
+        });
+      } else if ($(this).hasClass('prev')) {
+        $('.card-carousel').stop(false, true).animate({
+          left: '+=' + $slide
+        });
+      }
+
+      $(this).removeClass('prev next');
+      $(this).siblings().removeClass('prev active next');
+
+      $(this).addClass('active');
+      $(this).prev().addClass('prev');
+      $(this).next().addClass('next');
+    });
+
+
+    // Keyboard nav
+    $('html body').keydown(function (e) {
+      if (e.keyCode == 37) { // left
+        $('.active').prev().trigger('click');
+      } else if (e.keyCode == 39) { // right
+        $('.active').next().trigger('click');
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script type="text/javascript">
+    $('html').mousemove(function (e) {
+      var movex = (e.pageX * -1 / 15);
+      var movey = (e.pageY * -1 / 15);
+      $(this).css('background-position', movex + 'px ' + movey + 'px ')
+    })
+  </script>
+</body>
+
+</html>
