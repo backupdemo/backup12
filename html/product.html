@@ -150,6 +150,71 @@
             </div>
         </div>
     </div>
+
+    <div class="faq container-fluid">
+        <div class="faqcontent">
+            <div>
+                <h1>FAQ ?</h1>
+    
+            </div>
+            <div class="faqquestion faqq1">
+                <p> Q- What are the common threats that Backup will cover in-game?<span style="float: right;">+</span></p>
+            </div>
+            <div class="faqanswer faqa1" style="display: none;">
+                <p>
+                    A- The game will include the respective threats that are given below:
+                    Cookie Stealing, fake download hack, dictionary Hack, unattended Files, unauthorized Files,
+                    unauthorized
+                    personal access hack, unattended System, dispose of file hack, unattended mail hack, Pendrive hack,
+                    unknown package, weak password hack, same password hack, new sim hack, spear phishing, bloatware,
+                    firing
+                    procedure. Apart from all these social engineered attacks will also be covered.
+                </p>
+            </div>
+            <div class="faqquestion faqq2">
+                <p> Q- Are cybersecurity threats increasing?<span style="float: right;">+</span>
+                </p>
+            </div>
+            <div class="faqanswer faqa2" style="display: none;">
+                <p>
+                    A- Yes, threats are increasing exponentially in sophistication, intensity, diversity, and volume.
+                    Cyber experts report significant escalation in external cyberattacks, especially from criminal
+                    organizations and foreign state-sponsored activities.
+                </p>
+            </div>
+            <div class="faqquestion faqq3">
+                <p> Q- How significant is privacy as a component of cybersecurity?<span style="float: right;">+</span>
+                </p>
+            </div>
+            <div class="faqanswer faqa3" style="display: none;">
+                <p>
+                    A- Very significant. There has been an unprecedented growth of social media, personal cloud
+                    services, and employees utilizing personal devices and third-party applications. This parallels with
+                    high profile stories on data breaches and even government accessing citizens’ personal information.
+                    The issues cited by state Chief Information Security Officers include unauthorized access to
+                    personal information, compliance with state statutes on privacy and managing information sharing
+                    with third parties.
+                </p>
+            </div>
+            <div class="faqquestion faqq4">
+                <P>
+                    Q- Doesn’t everyone already know about cybersecurity?<span style="float: right;">+</span>
+
+                </P>
+            </div>
+            <div class="faqanswer faqa4" style="display: none;">
+                <p>
+                    A- People know about cybersecurity – but they don’t know enough to protect themselves. Most people
+                    may even understand the imperative for protecting data and the fact that cyber threats are getting
+                    worse. However, effective cybersecurity is an ongoing maturing capability for not only the
+                    government enterprise but for individuals who are employed by or served by the state government.
+                    This capability must be continually exercised, tested and strengthened through awareness training to
+                    not only combat aggressive cyber threats, but also accidental, unintentional cyber events.
+                </p>
+            </div>
+        </div>
+    </div>
+
     <div class="contact_us">
         <h4>Interesting isn't it? Get in touch</h4>
         <div style="">
@@ -159,6 +224,7 @@
             We are here to assist. Contact us by phone, E-mail or via our Social Media Channels.
         </p>
     </div>
+
 
     <footer class="container-fluid ">
         <div class="row">
@@ -183,6 +249,23 @@
         })
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".faqq1").click(function () {
+                $(".faqa1").toggle("slide");
+            });
+            $(".faqq2").click(function () {
+                $(".faqa2").toggle("slide");
+            });
+            $(".faqq3").click(function () {
+                $(".faqa3").toggle("slide");
+            });
+            $(".faqq4").click(function () {
+                $(".faqa4").toggle("slide");
+            });
+
+        });
+    </script>
 
 </body>
 
