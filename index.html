@@ -52,25 +52,16 @@
             $('#n' + i).fadeIn(500);
         }
     </script>
-    <script type="text/javascript">
-        /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
-        (function (d, m) {
-            var kommunicateSettings = {
-                "appId": "3ee2ee3b87a1a3e00f5d1656f82b6ceed",
-                "popupWidget": true,
-                "automaticChatOpenOnNavigation": true
-            };
-            var s = document.createElement("script");
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-            var h = document.getElementsByTagName("head")[0];
+    <script async>
+        (function (w, d) {
+            w.CollectId = "5da0df2e46f7f336e04c3461";
+            var h = d.head || d.getElementsByTagName("head")[0];
+            var s = d.createElement("script");
+            s.setAttribute("type", "text/javascript");
+            s.setAttribute("src", "https://collectcdn.com/launcher.js");
             h.appendChild(s);
-            window.kommunicate = m;
-            m._globals = kommunicateSettings;
-        })(document, window.kommunicate || {});
+        })(window, document);
     </script>
-
 </head>
 
 <body onload="insert()">
@@ -496,24 +487,24 @@
                     </div>
                 </div>
                 <div class="my-card">
-                <div class="card ">
-                    <div class="img-box">
-                        <img src=" assets/datasecurity.png">
-                    </div>
-                    <div class="content">
-                        <span style="color: red;font-weight: bold;">DATA SECURITY</span>
-                        <span style="color: black"><br></span>
-                        <p>Data security refers to protective digital privacy measures
-                            that are applied to prevent unauthorized access to
-                            computers, databases, and websites. Data security is an
-                            essential aspect of IT for organizations of every size
-                            and type.</p>
+                    <div class="card ">
+                        <div class="img-box">
+                            <img src=" assets/datasecurity.png">
+                        </div>
+                        <div class="content">
+                            <span style="color: red;font-weight: bold;">DATA SECURITY</span>
+                            <span style="color: black"><br></span>
+                            <p>Data security refers to protective digital privacy measures
+                                that are applied to prevent unauthorized access to
+                                computers, databases, and websites. Data security is an
+                                essential aspect of IT for organizations of every size
+                                and type.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </div>
+        </div>
     </div>
     <div class="container-fluid" style="z-index: 99;">
         <div id="ourfeatures" class="scrollTo">
@@ -544,9 +535,12 @@
                         <div class="face face1">
                             <div class="content">
                                 <h2>Why</h2>
-                                <p>Instead of learning through hours of study materials and videos, we provide a gaming environment so that they have experience-based learning.
+                                <p>Instead of learning through hours of study materials and videos, we provide a gaming
+                                    environment so that they have experience-based learning.
 
-                                    Our training is based on real-events which brought havoc in well-known companies and is developed along with an intelligence system to specifically highlight and work on your weak points in the digital space.</p>
+                                    Our training is based on real-events which brought havoc in well-known companies and
+                                    is developed along with an intelligence system to specifically highlight and work on
+                                    your weak points in the digital space.</p>
                             </div>
                         </div>
                         <div class="face face2">
@@ -817,13 +811,13 @@
             s.parentNode.insertBefore(ga, s);
         })();
     </script>
-<script src=" js/jquery/jquery-3.2.1.min.js"></script>
-<script src=" js/tilt/tilt.jquery.min.js"></script>
-<script >
-    $('.js-tilt').tilt({
-        scale: 1.1
-    })
-</script>
+    <script src=" js/jquery/jquery-3.2.1.min.js"></script>
+    <script src=" js/tilt/tilt.jquery.min.js"></script>
+    <script>
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
+    </script>
 </body>
 
 </html>
