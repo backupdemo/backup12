@@ -65,7 +65,7 @@ body {
 }
 
 #elevator {
-  /* padding-top: 10%; */
+  padding-top: 5%;
   transition: top 1s;
   position: relative;
   top: 0;
