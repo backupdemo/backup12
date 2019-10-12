@@ -1,13 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
-
 body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
     background-image: url("../assets/Artboard.png");
     background-attachment: fixed;
-  font-family: 'Rubik', sans-serif;
-
 
 }
 
@@ -534,3 +530,18 @@ h2{
     }
 
 } */
+.iframe_container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+	height: 100%;
+	width: 100%;
+}
+.iframe_container iframe {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
