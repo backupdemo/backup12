@@ -9,6 +9,15 @@ $('.pannel button, .floor button').click(function(){
   var floor = parseInt($(this).text()); 
   if(isNaN(floor)) floor = 0;
   animate(function(){
+   
+
     $('#elevator').css({top: (-100 * floor )+'%'});
   });
 });
+
+// $(function(){
+//   $('div.box1').hide();
+//       $('.toggle').on('click', function(){
+//           $('div.box, div.box1').toggle();
+//       });
+// });  
