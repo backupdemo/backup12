@@ -40,6 +40,9 @@ h1 {
     hsla(0,0%,40%,.5) 0 -1px 0, 
     hsla(0,0%,100%,.6) 0 2px 1px;
 }
+p {
+	text-align: 
+}
 #elevator {
   transition: top 1s;
   position: relative; 
@@ -88,6 +91,16 @@ h1 {
     inset -1px -2px 3px #c4bca3,
     2px 6px 16px rgba(0,0,0,0.5);
   transition: all 0.2s;
+}
+.pannel button:hover{
+	 border: 3px solid #00fda9;
+    color: #00fda9;
+    transition: 0.5s all ease;
+}
+.floor button:hover{
+	 border: 3px solid #00fda9;
+    color: #00fda9;
+    transition: 0.5s all ease;
 }
 .pannel button:active, .pannel button.activated,
 .floor button:active, .floor button.activated {
