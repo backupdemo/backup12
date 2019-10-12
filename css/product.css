@@ -580,3 +580,7 @@ h2{
     font-size: larger;
 
 }
+iframe{
+    max-height: 727px;
+
+}
