@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
-/* 
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');/* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
@@ -11,6 +10,7 @@ body{
   background-attachment: fixed;
   
   overflow-x: hidden;
+  font-family: 'Rubik', sans-serif;
 
 
   /* background-attachment: fixed; */
@@ -58,7 +58,8 @@ body::-webkit-scrollbar-thumb
 }
 p{
   text-align: justify;
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'Rubik', sans-serif;
+
 }
 .images{
   transition: transform .5s;
