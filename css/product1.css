@@ -1,166 +1,216 @@
 /*Brushed Metal from http://simurai.com/lab/2011/08/21/brushed-metal/*/
-html, body, #elevator, section {
-  height: 100%;  
-  font-family: 
-    "Droid Sans", 
-    "Lucida Sans Unicode", 
-    "Lucida Grande", 
-    Verdana, 
-    Arial, 
-    Helvetica, 
+html,
+body,
+#elevator,
+section {
+  height: 100%;
+  font-family:
+    "Droid Sans",
+    "Lucida Sans Unicode",
+    "Lucida Grande",
+    Verdana,
+    Arial,
+    Helvetica,
     sans-serif;
   color: #444;
 }
-body {  
-  margin: 0; padding: 18px;
+
+body {
+  margin: 0;
+  padding: 18px;
   overflow: hidden;
   background-size: 100px 100%;
   background-image:
-    repeating-linear-gradient( left, 
-      hsla(0,0%,100%,0)      0%, 
-      hsla(0,0%,100%,0)      6%,
-      hsla(0,0%,100%, .1) 7.5%),
-    repeating-linear-gradient( left, 
-      hsla(0,0%,  0%,0)      0%, 
-      hsla(0,0%,  0%,0)      4%, 
-      hsla(0,0%,  0%,.03) 4.5%),
-    repeating-linear-gradient( left, 
-      hsla(0,0%,100%,0)     0%, 
-      hsla(0,0%,100%,0)   1.2%, 
-      hsla(0,0%,100%,.15) 2.2%),
-    linear-gradient( 180deg, 
-      hsl(0,0%,78%)   0%,
-      hsl(0,0%,90%)  47%, 
-      hsl(0,0%,78%)  53%, 
-      hsl(0,0%,70%) 100%);
+    repeating-linear-gradient(left,
+      hsla(0, 0%, 100%, 0) 0%,
+      hsla(0, 0%, 100%, 0) 6%,
+      hsla(0, 0%, 100%, .1) 7.5%),
+    repeating-linear-gradient(left,
+      hsla(0, 0%, 0%, 0) 0%,
+      hsla(0, 0%, 0%, 0) 4%,
+      hsla(0, 0%, 0%, .03) 4.5%),
+    repeating-linear-gradient(left,
+      hsla(0, 0%, 100%, 0) 0%,
+      hsla(0, 0%, 100%, 0) 1.2%,
+      hsla(0, 0%, 100%, .15) 2.2%),
+    linear-gradient(180deg,
+      hsl(0, 0%, 78%) 0%,
+      hsl(0, 0%, 90%) 47%,
+      hsl(0, 0%, 78%) 53%,
+      hsl(0, 0%, 70%) 100%);
 }
-h1 {
+
+.exp {
+  padding: 15% 0 10% 0;
+}
+
+.exp h1 {
+  padding-bottom: 10%;
+  font-size: 3.5em;
+  font-weight: bold;
   text-align: center;
-  text-shadow: 
-    hsla(0,0%,40%,.5) 0 -1px 0, 
-    hsla(0,0%,100%,.6) 0 2px 1px;
+  text-shadow:
+    hsla(0, 0%, 40%, .5) 0 -1px 0,
+    hsla(0, 0%, 100%, .6) 0 2px 1px;
 }
-p {
-	text-align: 
+
+.exp p,
+.exp ul {
+  font-size: 1.3em;
+  font-weight: 600;
 }
+
+.lift_img button {
+  top: 100%;
+}
+
 #elevator {
+  /* padding-top: 10%; */
   transition: top 1s;
-  position: relative; 
+  position: relative;
   top: 0;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
 }
+
+.frame_head h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
 .floor {
   float: left;
 }
+
+.pannel h1 {
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  font-family:Courier New, monospace;
+}
+
 .pannel {
-  background: rgba(225,225,200,0.5);
-  background-image: 
-    linear-gradient(180deg, 
-      transparent             0%, 
-      transparent            10%,
-      rgba(255,255,255,0.6)  45%, 
-      transparent            55%, 
-      rgba(255,255,255,0.6)  65%,
-      rgba(255,255,255,0.4)  85%, 
-      transparent            95%, 
-      transparent           100%);
+  display: block;
+  background: rgba(255, 255, 255, 0.5);
+  background-image:
+    linear-gradient(180deg,
+      transparent 0%,
+      transparent 10%,
+      rgba(255, 255, 255, 0.6) 45%,
+      transparent 55%,
+      rgba(255, 255, 255, 0.6) 65%,
+      rgba(255, 255, 255, 0.4) 85%,
+      transparent 95%,
+      transparent 100%);
   margin: 0 auto;
   width: 246px;
   padding: 25px 5px;
-  border: 4px outset rgba(255,255,255,0.2);
+  border: 4px outset rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
 }
+
 .pannel button,
 .floor button {
-  display: inline-block;
+  display: -webkit-inline-box;
   cursor: pointer;
-  border: none; 
+  border: none;
   outline: 0;
-  border-radius: 50%;
-  width: 60px; 
+  /* border-radius: 50%; */
+  width: 75%;
   height: 60px;
   margin: 10px 30px;
   font-size: 20px;
-  font-family: 
-    Courier New, 
+  font-family:
+    Courier New,
     monospace;
   font-weight: bold;
-  color: #444;
-  background: #e1e0c8;
-  box-shadow: 
-    -1px -2px 2px #c4bca3,
-    inset 1px 2px 3px #eeeeee,
-    inset -1px -2px 3px #c4bca3,
-    2px 6px 16px rgba(0,0,0,0.5);
-  transition: all 0.2s;
+  color: black;
+  background: white;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+  transition: transform .5s;
 }
-.pannel button:hover{
-	 border: 3px solid #00fda9;
-    color: #00fda9;
-    transition: 0.5s all ease;
+
+#final:hover {
+  border: 2px solid red;
+  color: red;
+  transition: 0.3s all ease;
+  transform: scale(1.1);
 }
-.floor button:hover{
-	 border: 3px solid #00fda9;
-    color: #00fda9;
-    transition: 0.5s all ease;
+
+.pannel button:hover {
+  border: 2px solid #00fda9;
+  color: #00fda9;
+  transition: 0.3s all ease;
+  transform: scale(1.1);
 }
-.pannel button:active, .pannel button.activated,
-.floor button:active, .floor button.activated {
+
+.floor button:hover {
+  border: 2px solid #00fda9;
+  color: #00fda9;
+  transition: 0.3s all ease;
+  transform: scale(1.1);
+}
+
+.pannel button:active,
+.pannel button.activated,
+.floor button:active,
+.floor button.activated {
   color: #4565c3;
-  box-shadow: 
-    -1px -2px 2px #c4bca3,
-    inset 1px 2px 3px #eeeeee,
-    inset -1px -2px 3px #c4bca3,
-    1px 2px 12px rgba(0,0,0,0.5);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
 }
+
 .floor button {
   float: right;
 }
+
 .grid {
   z-index: 9;
-  position: absolute; 
-  top: 0; 
-  width: 100%; 
+  position: absolute;
+  top: 0;
+  width: 100%;
   height: 100%;
-  background-image:     
-    radial-gradient(
-      #777 2%, 
+  background-image:
+    radial-gradient(#777 2%,
       #ccc 4%,
       transparent 5%,
       transparent 100%),
-    linear-gradient(120deg, 
-      transparent   0%, 
-      transparent   45%,
-      #555          46%, 
-      #999          54%, 
-      transparent   55%, 
-      transparent  100%),
-    linear-gradient(60deg, 
-      transparent   0%, 
-      transparent   45%,
-      #555          46%, 
-      #999          54%, 
-      transparent   55%, 
-      transparent  100%);
+    linear-gradient(120deg,
+      transparent 0%,
+      transparent 45%,
+      #555 46%,
+      #999 54%,
+      transparent 55%,
+      transparent 100%),
+    linear-gradient(60deg,
+      transparent 0%,
+      transparent 45%,
+      #555 46%,
+      #999 54%,
+      transparent 55%,
+      transparent 100%);
   background-size: 70px 120px;
   transition: -webkit-transform 2s;
   transition: transform 2s;
   transition: transform 2s, -webkit-transform 2s;
   -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  transform: scaleX(0);
 }
+
 .grid.closed {
   -webkit-transform: scaleX(.6);
-          transform: scaleX(.6); 
+  transform: scaleX(.6);
 }
+
 .grid.left {
   -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
+  transform-origin: 0 0;
   left: calc(-10% - 10px);
   border-right: 15px solid #777;
   box-shadow: 2px 0 #555;
 }
+
 .grid.right {
   -webkit-transform-origin: 100% 0;
-          transform-origin: 100% 0;
+  transform-origin: 100% 0;
   right: calc(-10% - 10px);
   border-left: 15px solid #777;
   box-shadow: -2px 0 #555;
