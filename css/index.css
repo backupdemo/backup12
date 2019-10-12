@@ -247,7 +247,7 @@ any siblings
     padding: 10px 10px;
     text-decoration: none;
     color: #fff;
-    font-family: arial, verdana, tahoma;
+     : arial, verdana, tahoma;
     font-size: 15px;
     font-weight: 550;
     display: inline-block;
@@ -285,7 +285,7 @@ any siblings
 } */
 /* 
 @font-face {
-    font-family: "CustomFont";
+     : "CustomFont";
     src: url("https://yoursite.com/css/fonts/CustomFont.eot");
     src: url("https://yoursite.com/css/fonts/CustomFont.woff") format("woff"),
     url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
