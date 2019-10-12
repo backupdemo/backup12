@@ -23,12 +23,20 @@
     <title>Product</title>
     <script type="text/javascript">
         /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
-        (function(d, m){
-          var kommunicateSettings = {"appId":"3ee2ee3b87a1a3e00f5d1656f82b6ceed","popupWidget":true,"automaticChatOpenOnNavigation":true};
-          var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
-          s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-          var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
-          window.kommunicate = m; m._globals = kommunicateSettings;
+        (function (d, m) {
+            var kommunicateSettings = {
+                "appId": "3ee2ee3b87a1a3e00f5d1656f82b6ceed",
+                "popupWidget": true,
+                "automaticChatOpenOnNavigation": true
+            };
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0];
+            h.appendChild(s);
+            window.kommunicate = m;
+            m._globals = kommunicateSettings;
         })(document, window.kommunicate || {});
     </script>
 </head>
@@ -97,7 +105,9 @@
                 <!-- <img src="../assets/product2.png" alt="Backup features" id="head"> -->
             </div>
         </div>
-        <div class="head"><h1>About Training</h1></div>
+        <div class="head">
+            <h1>About Training</h1>
+        </div>
         <div class="training_content">
             <p>
                 We at backup, are providing an experience-based gaming solution to cyber-security attacks. We break
@@ -105,39 +115,42 @@
                 reaction tests, we instill a more practical approach through gamification of the learning process.
             </p>
         </div>
-	</section>
-	<div class="iframe_container container">
-	<iframe src="product1.html" height="100%" width="100%"></iframe>
-		</div>
-	<div class="container compare">
-            <div class="head">
-                <h1>Comparision</h1>
+    </section>
+
+    <!-- Iframe Lift Section -->
+    <div class="iframe_container">
+        <iframe src="product1.html" height="100%" width="100%"></iframe>
+    </div>
+
+    <div class="container compare">
+        <div class="head">
+            <h1>Comparision</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-5 other">
+                <h1>Traditional trainings</h1>
+                <ul>
+                    <li>High or unpredictable testing costs <i class="fa fa-times "></i></li>
+                    <li>High or unpredictable testing costs <i class="fa fa-times "></i></li>
+                    <li>High or unpredictable testing costs <i class="fa fa-times "></i></li>
+                    <li>High or unpredictable testing costs <i class="fa fa-times "></i></li>
+                </ul>
             </div>
-            <div class="row">
-                <div class="col-md-5 other">
-                    <h1>Traditional trainings</h1>
-                    <ul>
-                        <li>High or unpredictable testing costs <i class="fa fa-times "></i></li>
-                        <li>High or unpredictable testing costs <i class="fa fa-times "></i></li>
-                        <li>High or unpredictable testing costs <i class="fa fa-times "></i></li>
-                        <li>High or unpredictable testing costs <i class="fa fa-times "></i></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 vs">
-                    <h1>VS</h1>
-                </div>
-                <div class="col-md-5 backup">
-                    <h1>Backup</h1>
-                    <ul>
-                        <li><i class="fa fa-check "></i> Predictable, pay-as-you-go pricing</li>
-                        <li><i class="fa fa-check "></i> Predictable, pay-as-you-go pricing</li>
-                        <li><i class="fa fa-check "></i> Predictable, pay-as-you-go pricing</li>
-                        <li><i class="fa fa-check "></i> Predictable, pay-as-you-go pricing</li>
-                    </ul>
-                </div>
+            <div class="col-md-2 vs">
+                <h1>VS</h1>
+            </div>
+            <div class="col-md-5 backup">
+                <h1>Backup</h1>
+                <ul>
+                    <li><i class="fa fa-check "></i> Predictable, pay-as-you-go pricing</li>
+                    <li><i class="fa fa-check "></i> Predictable, pay-as-you-go pricing</li>
+                    <li><i class="fa fa-check "></i> Predictable, pay-as-you-go pricing</li>
+                    <li><i class="fa fa-check "></i> Predictable, pay-as-you-go pricing</li>
+                </ul>
             </div>
         </div>
-	    <div class="contact_us">
+    </div>
+    <div class="contact_us">
         <h4>Interesting isn't it? Get in touch</h4>
         <div style="">
             <a href="../html/contact.html"><button id="more"> Contact us</button></a>
@@ -164,12 +177,13 @@
     </footer>
     <script type="text/javascript">
         $('body').mousemove(function (e) {
-          var movex = (e.pageX * -1 / 15);
-          var movey = (e.pageY * -1 / 15);
-          $(this).css('background-position', movex + 'px ' + movey + 'px ')
+            var movex = (e.pageX * -1 / 15);
+            var movey = (e.pageY * -1 / 15);
+            $(this).css('background-position', movex + 'px ' + movey + 'px ')
         })
     </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-	</body>
+</body>
+
 </html>
