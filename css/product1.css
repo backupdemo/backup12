@@ -12,8 +12,12 @@ section {
     Arial,
     Helvetica,
     sans-serif;
-  color: #444;
+  color: black;
+background-color: lightgrey;
 }
+/* body{
+  background-image: url("");
+} */
 .row{
   text-align: justify;
   margin-left: auto;
@@ -91,6 +95,7 @@ body {
 }
 
 .pannel {
+  height: 471px;
   display: block;
   background: rgba(255, 255, 255, 0.5);
   background-image:
@@ -108,10 +113,12 @@ body {
   padding: 25px 5px;
   border: 4px outset rgba(255, 255, 255, 0.2);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+  background-color: darkgrey;
 }
 
 .pannel button,
 .floor button {
+
   display: -webkit-inline-box;
   cursor: pointer;
   border: none;
@@ -126,7 +133,7 @@ body {
     monospace;
   font-weight: bold;
   color: black;
-  background: white;
+  background: lightgrey;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
   transition: transform .5s;
 }
@@ -139,15 +146,15 @@ body {
 }
 
 .pannel button:hover {
-  border: 2px solid #00fda9;
-  color: #00fda9;
+  border: 2px solid   black;
+  color:   black;
   transition: 0.3s all ease;
   transform: scale(1.1);
 }
 
 .floor button:hover {
-  border: 2px solid #00fda9;
-  color: #00fda9;
+  border: 2px solid   black;
+  color:   black;
   transition: 0.3s all ease;
   transform: scale(1.1);
 }

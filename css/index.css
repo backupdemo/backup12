@@ -18,7 +18,7 @@ body::-webkit-scrollbar-track
 
 body::-webkit-scrollbar
 {
-	/* width: 15px; */
+	width: 10px;
 	background-color: #F5F5F5;
 }
 
@@ -388,6 +388,8 @@ tr {
 
 .images{
     transition: transform .5s;
+  width: 100%;
+
 }
 .images:hover{
     transform: scale(1.1);
@@ -4263,4 +4265,7 @@ visibility: hidden;
         height: auto;
     }
 
+}
+div#collect-chat-launcher-container{
+    z-index: 50;
 }

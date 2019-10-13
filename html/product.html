@@ -159,8 +159,8 @@
                     <h1>FAQ ?</h1>
 
                 </div>
-                <div class="faqquestion faqq1">
-                    <p> Q- What are the common threats that Backup will cover in-game?<span
+                <div class="faqquestion faqq1" onclick="myFunction()">
+                    <p> Q- What are the common threats that Backup will cover in-game?<span id="faq"
                             style="float: right;">+</span></p>
                 </div>
                 <div class="faqanswer faqa1" style="display: none;">
@@ -176,8 +176,8 @@
                         procedure. Apart from all these social engineered attacks will also be covered.
                     </p>
                 </div>
-                <div class="faqquestion faqq2">
-                    <p> Q- Are cybersecurity threats increasing?<span style="float: right;">+</span>
+                <div class="faqquestion faqq2 "onclick="myFunction2()">
+                    <p> Q- Are cybersecurity threats increasing?<span id="faq2" style="float: right;">+</span>
                     </p>
                 </div>
                 <div class="faqanswer faqa2" style="display: none;">
@@ -188,8 +188,8 @@
                         organizations and foreign state-sponsored activities.
                     </p>
                 </div>
-                <div class="faqquestion faqq3">
-                    <p> Q- How significant is privacy as a component of cybersecurity?<span
+                <div class="faqquestion faqq3" onclick="myFunction3()">
+                    <p> Q- How significant is privacy as a component of cybersecurity?<span id="faq3"
                             style="float: right;">+</span>
                     </p>
                 </div>
@@ -205,9 +205,9 @@
                         with third parties.
                     </p>
                 </div>
-                <div class="faqquestion faqq4">
+                <div class="faqquestion faqq4" onclick="myFunction4()">
                     <P>
-                        Q- Doesn’t everyone already know about cybersecurity?<span style="float: right;">+</span>
+                        Q- Doesn’t everyone already know about cybersecurity?<span id="faq4" style="float: right;">+</span>
 
                     </P>
                 </div>
@@ -248,7 +248,7 @@
                 </div>
                 <div class="col-md-6 powered">
                     <p style="color: white;">
-                        Designed and Developed by <a href="../html/task.html"><span
+                        Designed and Developed by <a href="#"><span
                                 style="font-weight: bold;color:red;">T.A.S.K</span></a>
                     </p>
                 </div>
@@ -280,7 +280,41 @@
 
         });
     </script>
+<script>
+    function myFunction() {
+      var x = $("#faq").text();
+      if (x === "+") {
+        $("#faq").text("-");
+      } else {
+        $("#faq").text("+");
+      }
+    }
+    function myFunction2() {
+      var x = $("#faq2").text();
+      if (x === "+") {
+        $("#faq2").text("-");
+      } else {
+        $("#faq2").text("+");
+      }
+    }
+    function myFunction3() {
+      var x = $("#faq3").text();
+      if (x === "+") {
+        $("#faq3").text("-");
+      } else {
+        $("#faq3").text("+");
+      }
+    }
+    function myFunction4() {
+      var x = $("#faq4").text();
+      if (x === "+") {
+        $("#faq4").text("-");
+      } else {
+        $("#faq4").text("+");
+      }
+    }
 
+    </script>
 </body>
 
 </html>
