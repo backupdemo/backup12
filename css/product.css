@@ -570,7 +570,7 @@ h2{
 .faqquestion{
     padding: 5px;
 
-    cursor: crosshair;
+    /* cursor: crosshair; */
   font-weight: bold;
   background-color: ghostwhite;
   font-size: 1.3em;
@@ -585,4 +585,8 @@ h2{
 iframe{
     max-height: 727px;
 
+}
+video{
+    width: 100%;
+    height: auto;
 }

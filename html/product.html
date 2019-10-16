@@ -19,7 +19,12 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link rel='stylesheet' href='https://tympanus.net/Development/Slicebox/css/demo.css'> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+
     <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/imageswipe.css">
     <title>Product</title>
     <script async>
         (function (w, d) {
@@ -32,11 +37,11 @@
         })(window, document);
     </script>
     <script>
-
+        
     </script>
 </head>
 
-<body>
+<body onload="nextproduct()">
     <section class="c1">
         <header class="container-fluid p-0 fixed" id="myHeader">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -101,6 +106,37 @@
                     <!-- <img src="../assets/product2.png" alt="Backup features" id="head"> -->
                 </div>
             </div>
+
+
+            <!-- image`swipe -->
+            <section>
+                <div class="">
+                    <div class="wrapper">
+    
+                        <ul id="sb-slider" class="sb-slider">
+                           
+                            <li>
+                            <video id="myVideo" controls controlslist="nodownload" poster = "../assets/logonew.gif">
+                                <source src="../assets/backupvideo.mp4" type="video/mp4" />
+                            </video>
+                            </li>
+                        </ul>
+    
+                        <div id="shadow" class="shadow"></div>
+    
+                        <div id="nav-arrows" class="nav-arrows">
+                            <a class="playtag" onclick="playVid()" href="#">Next</a>
+                            <a class="playtag" onclick="pauseVid()" href="#">Previous</a>
+                        </div>
+    
+                    </div>
+                </div>
+    
+    
+            </section>
+          
+
+
             <div class="head">
                 <h1>About Training</h1>
             </div>
@@ -142,11 +178,11 @@
                 <div class="col-md-5 backup">
                     <h1>Backup</h1>
                     <ul>
-                        <li><i class="fa fa-check "></i> Cyber-security attacks as per 2020 needs</li>
-                        <li><i class="fa fa-check "></i> Data presented in a form of story</li>
-                        <li><i class="fa fa-check "></i> Modules are experienced based</li>
-                        <li><i class="fa fa-check "></i> Multiplayer phishing simulator </li>
-                        <li><i class="fa fa-check "></i> Training lasts 10 weeks </li>
+                        <li>   <i class="fa fa-check " style="margin-left:2%;"></i> Cyber-security attacks as per 2020 needs</li>
+                        <li>   <i class="fa fa-check " style="margin-left:2%;"></i> Data presented in a form of story</li>
+                        <li>   <i class="fa fa-check " style="margin-left:2%;"></i> Modules are experienced based</li>
+                        <li>   <i class="fa fa-check " style="margin-left:2%;"></i> Multiplayer phishing simulator </li>
+                        <li>   <i class="fa fa-check " style="margin-left:2%;"></i> Training lasts 10 weeks </li>
                     </ul>
                 </div>
             </div>
@@ -176,7 +212,7 @@
                         procedure. Apart from all these social engineered attacks will also be covered.
                     </p>
                 </div>
-                <div class="faqquestion faqq2 "onclick="myFunction2()">
+                <div class="faqquestion faqq2 " onclick="myFunction2()">
                     <p> Q- Are cybersecurity threats increasing?<span id="faq2" style="float: right;">+</span>
                     </p>
                 </div>
@@ -207,7 +243,8 @@
                 </div>
                 <div class="faqquestion faqq4" onclick="myFunction4()">
                     <P>
-                        Q- Doesn’t everyone already know about cybersecurity?<span id="faq4" style="float: right;">+</span>
+                        Q- Doesn’t everyone already know about cybersecurity?<span id="faq4"
+                            style="float: right;">+</span>
 
                     </P>
                 </div>
@@ -280,41 +317,60 @@
 
         });
     </script>
-<script>
-    function myFunction() {
-      var x = $("#faq").text();
-      if (x === "+") {
-        $("#faq").text("-");
-      } else {
-        $("#faq").text("+");
-      }
-    }
-    function myFunction2() {
-      var x = $("#faq2").text();
-      if (x === "+") {
-        $("#faq2").text("-");
-      } else {
-        $("#faq2").text("+");
-      }
-    }
-    function myFunction3() {
-      var x = $("#faq3").text();
-      if (x === "+") {
-        $("#faq3").text("-");
-      } else {
-        $("#faq3").text("+");
-      }
-    }
-    function myFunction4() {
-      var x = $("#faq4").text();
-      if (x === "+") {
-        $("#faq4").text("-");
-      } else {
-        $("#faq4").text("+");
-      }
-    }
+    <script>
+        function myFunction() {
+            var x = $("#faq").text();
+            if (x === "+") {
+                $("#faq").text("-");
+            } else {
+                $("#faq").text("+");
+            }
+        }
 
+        function myFunction2() {
+            var x = $("#faq2").text();
+            if (x === "+") {
+                $("#faq2").text("-");
+            } else {
+                $("#faq2").text("+");
+            }
+        }
+
+        function myFunction3() {
+            var x = $("#faq3").text();
+            if (x === "+") {
+                $("#faq3").text("-");
+            } else {
+                $("#faq3").text("+");
+            }
+        }
+
+        function myFunction4() {
+            var x = $("#faq4").text();
+            if (x === "+") {
+                $("#faq4").text("-");
+            } else {
+                $("#faq4").text("+");
+            }
+        }
     </script>
+    <script src='https://tympanus.net/Development/Slicebox/js/jquery.slicebox.js'></script>
+    <script src="../js/scriptimage.js"></script>
+     <script>
+//          var vid = document.getElementById("myVideo"); 
+
+//        function pauseVid() { 
+//   vid.pause(); 
+// } 
+// function playVid() { 
+//   vid.play(); 
+// } 
+    </script>
+    <script>
+        $( window ).load(function() {
+                 $( 'video' ).get(0).pause();
+        });
+        </script>
 </body>
 
 </html>

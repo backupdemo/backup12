@@ -13,7 +13,7 @@ section {
     Helvetica,
     sans-serif;
   color: black;
-background-color: lightgrey;
+background-color: white;
 }
 /* body{
   background-image: url("");
@@ -113,7 +113,7 @@ body {
   padding: 25px 5px;
   border: 4px outset rgba(255, 255, 255, 0.2);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
-  background-color: darkgrey;
+  background-color: white;
 }
 
 .pannel button,
@@ -133,7 +133,7 @@ body {
     monospace;
   font-weight: bold;
   color: black;
-  background: lightgrey;
+  background: white;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
   transition: transform .5s;
 }
