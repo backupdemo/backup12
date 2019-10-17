@@ -262,7 +262,7 @@ background-color: white;
   
   }
   .congrats{
-    margin-top: 85%;
+    margin-top: 15%;
   }
     
 }
@@ -1475,19 +1475,20 @@ background-color: white;
   }
   .box1{
     margin-top: 50%;
+    /* margin-top: 30%; */
   }
   .box2{
-    padding-top: 20%;
+    padding-top: 10%;
     margin-top:-80px;
   }
   .box3{
-    padding-top: 20%;
+    padding-top: 5%;
 
     margin-top: -50%;
   }
   .box4{
     margin-top: -7%;
-    padding-top: 20%;
+    padding-top: 10%;
 
     /* padding-top: 50%; */
   }
@@ -1499,6 +1500,6 @@ background-color: white;
     display: none;
   }
   .congrats{
-    margin-top: 70%;
+    /* margin-top: 70%; */
   }
     }
