@@ -15,6 +15,7 @@ body{
 
 
 }
+
 body::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -291,6 +292,11 @@ color: #00fda9;
         margin-left: 18%;
         width: 20em;
     }
+    .mx-auto.my-2.order-0.order-md-1.position-relative {
+      text-align: center;
+  }
+
+
     .bg-dark{
         background-color: black !important;
     }
@@ -1019,7 +1025,9 @@ border: 2px solid #00fda9;
     .bg-dark{
         background-color: black !important;
     }
- 
+    button.navbar-toggler{
+      float: right;
+    }
     .fixed {
         position: fixed;
         top: 0;
@@ -1254,6 +1262,9 @@ border: 2px solid #00fda9;
         display: contents;
         margin-left: 18%;
         width: 20em;
+    }
+    button.navbar-toggler{
+      float: right;
     }
     .bg-dark{
         background-color: black !important;

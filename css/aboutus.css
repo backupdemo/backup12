@@ -548,6 +548,9 @@ p{
     overflow-x: hidden;
     scroll-behavior: smooth;
   }
+  .mx-auto.my-2.order-0.order-md-1.position-relative {
+    text-align: center;
+}
   .aboutp{
     margin-top: -5%;;
     text-align: justify;
@@ -924,6 +927,9 @@ padding-top:5px !important;
 .quaffle p {
   text-align: end !important;
 } 
+.bg-dark{
+  background-color: black !important;
+}
 }
 
 /* 
