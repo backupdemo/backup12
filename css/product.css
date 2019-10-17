@@ -176,7 +176,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     #head {
-        width: 300px;
+        width: 100%;
     }
 
 
@@ -421,6 +421,7 @@ body::-webkit-scrollbar-thumb {
 
     .row {
         margin-bottom: 4% !important;
+        
 
     }
 
@@ -1062,7 +1063,7 @@ body::-webkit-scrollbar-thumb {
 
     .row {
         margin-bottom: 4% !important;
-
+        margin-right: 0%;
     }
 
     .head h1 {
