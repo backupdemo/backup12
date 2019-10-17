@@ -244,17 +244,17 @@ background-color: white;
   }
   .box2{
     margin-top:-105px;
-    padding-top: 25%;
+    /* padding-top: 25%; */
 
   }
   .box3{
     margin-top: -9%;
-    padding-top: 25%;
+    /* padding-top: 25%; */
 
   }
   .box4{
     margin-top: -7%;
-    padding-top: 25%;
+    /* padding-top: 25%; */
 
   }
   iframe{
@@ -487,21 +487,21 @@ background-color: white;
   }
   .box1{
     margin-top: 10%;
-    padding-top: 25%;
+    /* padding-top: 25%; */
 
   }
   .box2{
-    padding-top: 25%;
+    /* padding-top: 25%; */
 
     margin-top:-105px;
   }
   .box3{
-    padding-top: 25%;
+    /* padding-top: 25%; */
 
     margin-top: -9%;
   }
   .box4{
-    padding-top: 25%;
+    /* padding-top: 25%; */
 
     margin-top: -7%;
   }
@@ -1477,17 +1477,17 @@ background-color: white;
     margin-top: 50%;
   }
   .box2{
-    padding-top: 30%;
+    padding-top: 20%;
     margin-top:-80px;
   }
   .box3{
-    padding-top: 25%;
+    padding-top: 20%;
 
     margin-top: -50%;
   }
   .box4{
     margin-top: -7%;
-    padding-top: 25%;
+    padding-top: 20%;
 
     /* padding-top: 50%; */
   }
@@ -1499,6 +1499,6 @@ background-color: white;
     display: none;
   }
   .congrats{
-    margin-top: 85%;
+    margin-top: 70%;
   }
     }
