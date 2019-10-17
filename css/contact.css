@@ -1528,14 +1528,16 @@ a:hover {
 	position: relative;
 	font-size: 0;
 	text-align: left;
-	color: #666;
+	color: black;
 }
 .sky-tabs > input {
 	position: absolute;
 	display: none;
 }
 .sky-tabs > label {
-	position: relative;
+  position: relative;
+  /* width: 100%; */
+  
 	z-index: 1;
 	display: inline-block;
 	box-sizing: border-box;
@@ -1557,8 +1559,9 @@ a:hover {
 }
 .sky-tabs > label span {
 	display: block;
-	padding: 5px;
-	background: rgba(255,255,255,0.9);
+  padding: 5px;
+  /* border: 1px solid black */
+	/* background: black; */
 }
 .sky-tabs > label span span {
 	padding: 0 20px;
@@ -1571,11 +1574,13 @@ a:hover {
 }
 .sky-tabs > label:hover span span {
 	background: black;
-	color: #fff;	
+  color: #fff;	
+
 }
 .sky-tabs > label.disabled span span {
 	background: transparent;
-	color: inherit;
+  color: inherit;
+  border: 1px solid green;
 }
 .sky-tabs > input:checked + label {
   cursor: default;
@@ -1584,7 +1589,12 @@ a:hover {
 }
 .sky-tabs > input:checked + label span span {
 	background: black;
-	color: #fff;
+  color: #fff;
+  /* font-size: larger; */
+}
+ .body span {
+  color: black;
+  font-size: initial;
 }
 .sky-tabs > .switcher {
 	display: none;
@@ -3229,6 +3239,7 @@ a:hover {
 		margin-left: -5px;
 	}
 }
+
 
 
 /**/
